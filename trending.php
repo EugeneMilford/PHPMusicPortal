@@ -61,6 +61,7 @@
                     </div>
 	        </section>
             
+                <!-- Header Sectiond -->
                 <header class="page_header header_darkgrey header_transparent background_cover divided_items with_menu_icon">
                     <div class="container">
                         <div class="row">
@@ -112,11 +113,11 @@
                 </header>
             
                 <hr>
-		<h4>Blog Page</h4>
+		<h4>Trending Section</h4>
 		<hr>
                 
-                <!-- Blog Section -->
-                
+                <!-- Trending Section -->
+           
                 <!-- Footer Section -->
 		<section class="ds page_copyright section_padding_25">
                     <div class="container">

@@ -112,11 +112,12 @@
                 </header>
             
                 <hr>
-		<h4>Blog Page</h4>
+		<h4>Gallery Section</h4>
 		<hr>
                 
-                <!-- Blog Section -->
-                
+                <!-- Gallery Section -->
+		
+                        
                 <!-- Footer Section -->
 		<section class="ds page_copyright section_padding_25">
                     <div class="container">

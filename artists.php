@@ -115,7 +115,17 @@
 		<h4>Artists Section</h4>
 		<hr>
                 
-                <!-- Artists Section -->
+                <div class="col-sm-3 widget widget_search">
+                    <form method="get" class="searchform" action="">
+                        <div class="form-group"> 
+                            <label class="sr-only" for="widget-search">Search for:</label> 
+                            <input id="widget-search" type="text" name="find" class="form-control" placeholder="Search Artist"> 
+                        </div> 
+                        <button type="submit" class="theme_button color">Search</button>
+                    </form>
+	        </div>
+  
+                <?php include 'data/artistData.php'?>
                         
                 <!-- Footer Section -->
 		<section class="ds page_copyright section_padding_25">

@@ -4,6 +4,8 @@
     <head>
         <meta charset="UTF-8">
         <title>Music Portal</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     </head>
     <body>
         <div class="preloader">
@@ -154,7 +156,7 @@
 					<div class="media">
                                             <div class="media-left"> <i class="rt-icon2-shop highlight2 fontsize_18"></i> </div>
                                             <div class="media-body">
-						<h6 class="media-heading grey">Postal Address:</h6> 6 Herculesstreet, Vredenburg, Western Cape, 7380
+						<h6 class="media-heading grey">Postal Address:</h6> Western Cape
                                             </div>
 					</div>
                                     </li>
@@ -180,7 +182,7 @@
                     </div>
 		</section>
                         
-                <!-- Footer Section -->>
+                <!-- Footer Section -->
 		<section class="ds page_copyright section_padding_25">
                     <div class="container">
 			<div class="row">

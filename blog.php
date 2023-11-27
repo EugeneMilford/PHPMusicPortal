@@ -4,6 +4,8 @@
     <head>
         <meta charset="UTF-8">
         <title>Music Portal</title>
+            <link rel="stylesheet" href="style.css">
+            <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     </head>
     <body>
         <div class="preloader">

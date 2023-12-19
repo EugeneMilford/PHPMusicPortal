@@ -4,65 +4,12 @@
     <head>
         <meta charset="UTF-8">
         <title>Music Portal</title>
-            <link rel="stylesheet" href="style.css">
-            <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/main.css">
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     </head>
     <body>
-        <div class="preloader">
-            <div class="preloader_image"></div>
-        </div>
-
         <div id="canvas">
-            <div id="box_wrapper">
-            <!-- template sections -->
-                <section class="page_toplogo with_bottom_overlap_logo ls with_top_color_border columns_padding_0">
-                    <div class="container">
-                        <div class="row flex-wrap v-center">
-                            <div class="col-sm-2 col-sm-push-5 text-left text-sm-center">
-                                <div class="bottom_overlap_logo">
-                                    <a href="./" class="logo">
-                                        <img src="images/logo.png" alt="">
-                                    </a>  
-                                </div>
-                                <span class="toggle_menu"><span></span></span>
-                            </div>               
-                            <div class="col-sm-5 text-left text-sm-right">
-                                <div class="divided-content small-text greylinks color2">
-                                    <div>
-                                        <div class="dropdown">
-                                            <a href="#0" id="account-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                My account
-                                                <span class="caret"></span>
-                                            </a>
-                                            <ul class="dropdown-menu" aria-labelledby="account-dropdown">
-                                                <li> <a href="#0">Sign In</a> </li>
-                                                <li> <a href="#0">Sign Up</a> </li>
-                                            </ul>
-                                        </div>
-                                    </div>                            
-                                    <div class="hidden-xs hidden-sm">
-                                        <div class="dropdown inline-block">
-                                            <a href="" id="search-dropdown" class="theme_button no_bg_button square_button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                <i class="fa fa-search" aria-hidden="true"></i>
-                                            </a>                                 
-                                            <div class="dropdown-menu" aria-labelledby="search-dropdown">
-                                                <div class="widget widget_search">
-                                                    <form method="get" class="searchform form-inline" action="./">
-                                                        <div class="form-group-wrap">
-                                                            <div class="form-group margin_0"> <label class="sr-only" for="topline-search">Search for:</label> <input id="topline-search" type="text" value="" name="search" class="form-control" placeholder="Search Keyword"> </div> 
-                                                            <button type="submit" class="theme_button no_bg_button">Search</button>
-                                                        </div>
-                                                    </form>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-	        </section>
-            
+            <div id="box_wrapper"> 
                 <header class="page_header header_darkgrey header_transparent background_cover divided_items with_menu_icon">
                     <div class="container">
                         <div class="row">

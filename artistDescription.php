@@ -65,18 +65,10 @@
                     <div class="container">
 			<div class="row">
                             <div class="col-md-6 text-center text-md-left">
-				<h2 class="small">Contacts</h2>
+				<h2 class="small">Artists</h2>
                             </div>
                             <div class="col-md-6 text-center text-md-right">
-				<ol class="breadcrumb">
-                                    <li> <a href="./">
-                                            Home
-                                        </a> 
-                                    </li>
-                                    <li class="active">
-                                        Contact
-                                    </li>
-				</ol>
+                                <p>Descriptions</p>
                             </div>
 			</div>
                     </div>
@@ -161,3 +153,4 @@
         </div> 
     </body>
 </html>
+

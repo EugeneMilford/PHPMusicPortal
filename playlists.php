@@ -7,15 +7,11 @@
         <link rel="stylesheet" href="assets/css/main.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-        <style>
-    .bg-aqua {
-        background-color: #65ab2c; /* Aqua light blue color code */
-    }
-</style>
     </head>
     <body>
         <div id="canvas">
             <div id="box_wrapper">
+            <!-- template sections -->    
                 <header class="navbar navbar-expand-lg navbar-dark bg-aqua fixed-top" style="font-size: 18px;">
     <div class="container">
         <a class="navbar-brand" href="index.php">MUSIC PORTAL</a>
@@ -60,30 +56,40 @@
     </div>
 </header>
             
+                <section class="page_breadcrumbs cs gradient section_padding_top_25 section_padding_bottom_25 table_section table_section_md">
+                    <div class="container">
+			<div class="row">
+                            <div class="col-md-6 text-center text-md-left">
+				<h2 class="small">Contacts</h2>
+                            </div>
+                            <div class="col-md-6 text-center text-md-right">
+				<ol class="breadcrumb">
+                                    <li> <a href="./">
+                                            Home
+                                        </a> 
+                                    </li>
+                                    <li class="active">
+                                        Playlists
+                                    </li>
+				</ol>
+                            </div>
+			</div>
+                    </div>
+		</section>
                 
-                
-                <div class="col-sm-3 widget widget_search">
-                    <form method="get" class="searchform" action="">
-                        <div class="input-group">
-                            <input id="widget-search" type="text" name="find" class="form-control" placeholder="Search Artist" aria-label="Search for">
-                            <button type="submit" class="btn btn-primary">Search</button>
-                        </div>
-                    </form>
-                </div>
-
                 
                         
                 <!-- Footer Section -->
 		<section class="ds page_copyright section_padding_25 fixed-bottom">
                     <div class="container">
-                        <div class="row">
+			<div class="row">
                             <div class="col-sm-12 text-center">
-                                <p class="small-text big-spacing">&copy; Copyright 2023. All Rights Reserved.</p>
+				<p class="small-text big-spacing">&copy; Copyright 2023. All Rights Reserved.</p>
                             </div>
-                        </div>
+			</div>
                     </div>
-                </section>
+		</section>
             </div>
-        </div>    
+        </div> 
     </body>
 </html>

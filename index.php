@@ -4,14 +4,9 @@
     <head>
         <meta charset="UTF-8">
         <title>Music Portal</title>
-        <link rel="stylesheet" href="assets/css/main.css">
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-        <link rel="stylesheet" href="assets/css/animations.css">
-        <style>
-    .bg-aqua {
-        background-color: #65ab2c; /* Aqua light blue color code */
-    }
-</style>
+        <link rel="stylesheet" href="assets/css/music.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     </head>
     <body>
         <div id="canvas">
@@ -43,6 +38,9 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="merchandise.php">Merchandise</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="welcome.php">welcome</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="playlists.php">Playlists</a>
@@ -175,76 +173,156 @@
     </div>
 </section>
  
-                <section id="albums" class="ls section_padding_top_130 section_padding_bottom_100 columns_margin_bottom_30">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 text-center">
-                <h2 class="section_header">Featured Music Albums</h2>
+                <section class="ls section_padding_top_130 section_padding_bottom_100">
+  <div class="container">
+    <div class="row">
+        <div class="col-12 text-center">
+                <h2 class="section_header">Featured Artists</h2>
                 <hr class="header_divider">
-                <p class="small-text big">Check out our newest music albums. You can easily purchase our music albums on <span class="highlight3">iTunes</span> or <span class="highlight3">Google Play</span>.</p>
+                <p class="small-text big">Check out our posts on<span class="highlight3">iTunes</span> or <span class="highlight3">Google Play</span>.</p>
             </div>
+      <div class="col-sm-12">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+          <div class="col">
+            <article class="post vertical-item content-padding with_shadow text-center">
+              <div class="item-media entry-thumbnail">
+                    <img src="assets/images/gallery/01.jpg" alt="">
+              </div>
+              <div class="item-content">
+                <h4 class="entry-title">Taylor Swift</h4>
+                
+              </div>
+            </article>
+          </div>
+          <!-- Repeat similar structure for other items -->
+          <div class="col">
+            <article class="post vertical-item content-padding with_shadow text-center">
+              <div class="item-media entry-thumbnail">
+                    <img src="assets/images/gallery/01.jpg" alt="">
+              </div>
+              <div class="item-content">
+                <h4 class="entry-title">Drake</h4>
+                
+              </div>
+            </article>
+          </div>
+          <div class="col-4">
+            <article class="post vertical-item content-padding with_shadow text-center">
+              <div class="item-media entry-thumbnail">
+                    <img src="assets/images/gallery/01.jpg" alt="">
+              </div>
+              <div class="item-content">
+                <h4 class="entry-title"><a href="blog-single-right.html">One Republic</h4>     
+              </div>
+            </article>
+          </div>
         </div>
-        <div class="row topmargin_30">
-            <div class="col-md-4 col-sm-6">
-                <div class="vertical-item slide-media text-center loop-color">
-                    <div class="item-media-wrap">
-                        <img src="assets/images/albums/01.jpg" alt="">
-                        <div class="item-media back-media">
-                            <img src="assets/images/albums/cd.png" alt="">
-                        </div>
-                        <div class="item-media">
-                            <img src="assets/images/albums/01.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="item-content topmargin_30">
-                        <h4 class="entry-title bottommargin_0">
-                            <a href="single-album.html">World's apart (2016)</a>
-                        </h4>
-                        <span class="price">$99.85</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <div class="vertical-item slide-media text-center loop-color">
-                    <div class="item-media-wrap">
-                        <img src="assets/images/albums/01.jpg" alt="">
-                        <div class="item-media back-media">
-                            <img src="assets/images/albums/cd.png" alt="">
-                        </div>
-                        <div class="item-media">
-                            <img src="assets/images/albums/02.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="item-content topmargin_30">
-                        <h4 class="entry-title bottommargin_0">
-                            <a href="single-album.html">Shake the Shudder (2017)</a>
-                        </h4>
-                        <span class="price">$160.20</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 col-sm-offset-3 col-md-offset-0">
-                <div class="vertical-item slide-media text-center loop-color">
-                    <div class="item-media-wrap">
-                        <img src="assets/images/albums/03.jpg" alt="">
-                        <div class="item-media back-media">
-                            <img src="assets/images/albums/cd.png" alt="">
-                        </div>
-                        <div class="item-media">
-                            <img src="assets/images/albums/03.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="item-content topmargin_30">
-                        <h4 class="entry-title bottommargin_0">
-                            <a href="single-album.html">Let's Build A Fire (2017)</a>
-                        </h4>
-                        <span class="price">$158.25</span>
-                    </div>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
+  </div>
 </section>
+                
+                <section id="albums" class="ls section_padding_top_130 section_padding_bottom_100 columns_margin_bottom_30">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12 text-center">
+							<h2 class="section_header">Featured Music Albums</h2>
+							<hr class="header_divider">
+							<p class="small-text big">Check out our newest music albums. You can easily purchase our music albums on <span class="highlight3">iTunes</span> or <span class="highlight3">Google Play</span>.</p>
+						</div>
+					</div>
+					<div class="row topmargin_30">
+						<div class="col-md-4 col-sm-6">
+							<div class="vertical-item slide-media text-center loop-color">
+								<div class="item-media-wrap"> <img src="assets/img/album1.jpeg" alt="">
+									<div class="item-media back-media"> <img src="assets/img/cd.png" alt=""> </div>
+									<div class="item-media"> <img class="album-image" src="assets/img/album1.jpeg" alt="">
+										
+									</div>
+								</div>
+								<div class="item-content topmargin_30">
+									<h4 class="entry-title bottommargin_0"> <a href="single-album.html">World's apart (2016)</a> </h4> <span class="price">
+							$99,85
+						</span> </div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="vertical-item slide-media text-center loop-color">
+								<div class="item-media-wrap"> <img src="assets/img/album2.jpeg" alt="">
+									<div class="item-media back-media"> <img src="assets/img/cd.png" alt=""> </div>
+									<div class="item-media"> <img class="album-image" src="assets/img/album2.jpeg" alt="">
+										
+									</div>
+								</div>
+								<div class="item-content topmargin_30">
+									<h4 class="entry-title bottommargin_0"> <a href="single-album.html">World's apart (2016)</a> </h4> <span class="price">
+							$99,85
+						</span> </div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="vertical-item slide-media text-center loop-color">
+								<div class="item-media-wrap"> <img src="assets/img/album3.jpeg" alt="">
+									<div class="item-media back-media"> <img src="assets/img/cd.png" alt=""> </div>
+									<div class="item-media"> <img class="album-image" src="assets/img/album3.jpeg" alt="">
+										
+									</div>
+								</div>
+								<div class="item-content topmargin_30">
+									<h4 class="entry-title bottommargin_0"> <a href="single-album.html">World's apart (2016)</a> </h4> <span class="price">
+							$99,85
+						</span> </div>
+							</div>
+						</div>
+					</div>
+                                     <div class="row topmargin_30">
+						<div class="col-md-4 col-sm-6">
+							<div class="vertical-item slide-media text-center loop-color">
+								<div class="item-media-wrap"> <img src="assets/img/album4.jpeg" alt="">
+									<div class="item-media back-media"> <img src="assets/img/cd.png" alt=""> </div>
+									<div class="item-media"> <img class="album-image" src="assets/img/album4.jpeg" alt="">
+										
+									</div>
+								</div>
+								<div class="item-content topmargin_30">
+									<h4 class="entry-title bottommargin_0"> <a href="single-album.html">World's apart (2016)</a> </h4> <span class="price">
+							$99,85
+						</span> </div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="vertical-item slide-media text-center loop-color">
+								<div class="item-media-wrap"> <img src="assets/img/album5.jpeg" alt="">
+									<div class="item-media back-media"> <img src="assets/img/cd.png" alt=""> </div>
+									<div class="item-media"> <img class="album-image" src="assets/img/album5.jpg" alt="">
+										
+									</div>
+								</div>
+								<div class="item-content topmargin_30">
+									<h4 class="entry-title bottommargin_0"> <a href="single-album.html">World's apart (2016)</a> </h4> <span class="price">
+							$99,85
+						</span> </div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="vertical-item slide-media text-center loop-color">
+								<div class="item-media-wrap"> <img src="assets/img/album6.jpeg" alt="">
+									<div class="item-media back-media"> <img src="assets/img/cd.png" alt=""> </div>
+									<div class="item-media"> <img class="album-image" src="assets/img/album6.jpeg" alt="">
+										
+									</div>
+								</div>
+								<div class="item-content topmargin_30">
+									<h4 class="entry-title bottommargin_0"> <a href="single-album.html">World's apart (2016)</a> </h4> <span class="price">
+							$99,85
+						</span> </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+                
+                <br>     
                 <section class="ls section_padding_top_80 section_padding_bottom_130 columns_padding_25">
 				<div class="container">
                 <div class="row">

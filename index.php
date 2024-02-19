@@ -36,6 +36,9 @@
                                     <a class="nav-link" href="artists.php">Artists</a>
                                 </li>
                                 <li class="nav-item">
+                                    <a class="nav-link" href="tracks.php">Tracks</a>
+                                </li>
+                                <li class="nav-item">
                                     <a class="nav-link" href="videos.html">Music Videos</a>
                                 </li>
                                 <li class="nav-item">
@@ -45,13 +48,13 @@
                                     <a class="nav-link" href="blog.php">Blog</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="playlists.html">Playlists</a>
+                                    <a class="nav-link" href="playlists.php">Playlists</a>
                                 </li>
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Extras</a>
                                     <ul class="dropdown-menu">
                                         <li><a class="dropdown-item" href="trending.html">Trending Music</a></li>
-                                        <li><a class="dropdown-item" href="top_10.html">Top 10 Albums Of All Time</a></li>
+                                        <li><a class="dropdown-item" href="top_10.php">Top 10 Albums Of All Time</a></li>
                                     </ul>
                                 </li>
                                 <li class="nav-item">
@@ -84,7 +87,7 @@
                             </div>
                         </div>
                         <div class="carousel-item active">
-                            <img src="assets/img/im1.jpg" class="d-block w-100" alt="...">
+                            <img src="assets/img/im3.jpg" class="d-block w-100" alt="...">
                             <div class="carousel-caption d-none d-md-block">
                                 <h1>Third slide label</h1>
                                 <p>Some representative placeholder content for the third slide.</p>
@@ -121,15 +124,6 @@
                                     This music portal was created to connect the user through the world of music. Explore all of your favorite tracks, artists, playlists, and more.<br><br>
                                     Feel free to stay in touch and remember to keep the music flame burning bright!!
                                 </p>
-                                <div class="content-justify vertical-center content-margins topmargin_25">
-                                    <button type="submit" id="contact_form_submit" class="btn submit_button wide_button m-0">Read More</button>
-                                    <span class="divided-content outside-dividers">
-                                        <span><a class="social-icon socicon-facebook" href="#" title="Facebook"></a></span>
-                                        <span><a class="social-icon socicon-twitter" href="#" title="Twitter"></a></span>
-                                        <span><a class="social-icon socicon-youtube" href="#" title="Youtube"></a></span>
-                                        <span><a class="social-icon socicon-google" href="#" title="Google"></a></span>
-                                    </span>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -198,8 +192,65 @@
                                 </article>
                             </div>
                         </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <article class="post format-small-image">
+                                    <div class="side-item side-md content-padding big-padding shadow">
+                                        <div class="row">
+                                            <div class="col-md-5">
+                                                <div class="item-media entry-thumbnail">
+                                                    <img src="assets/img/04.jpg" alt="" class="img-fluid">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-7">
+                                                <div class="item-content">
+                                                    <header class="entry-header">
+                                                        <h4 class="entry-title"> 
+                                                            <a href="blog-single-left.html">Post With Small Image</a> 
+                                                        </h4>
+                                                    </header>
+                                                    <div class="entry-content">
+                                                        <p>Pork chop pig prosciutto beef ribs ribeye brisket doner corned beef cupim frankfurter. Pancetta shoulder jerky, tenderloin cupim tail ribeye bresaola short ribs pig frankfurter doner ground round andouille.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col-md-6">
+                                <article class="post format-small-image">
+                                    <div class="side-item side-md content-padding big-padding shadow">
+                                        <div class="row">
+                                            <div class="col-md-5">
+                                                <div class="item-media entry-thumbnail">
+                                                    <img src="assets/img/04.jpg" alt="" class="img-fluid">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-7">
+                                                <div class="item-content">
+                                                    <header class="entry-header">
+                                                        <h4 class="entry-title"> 
+                                                            <a href="blog-single-left.html">Second Post With Small Image</a> 
+                                                        </h4>
+                                                    </header>
+                                                    <div class="entry-content">
+                                                        <p>Second article content goes here.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
                     </div>
                 </section>   
+                
+                <section id="tracks">
+                    
+                </section>
     
                 <section id="albums" class="ls section_padding_top_100 section_padding_bottom_100 columns_margin_bottom_30">
                     <div class="container">
@@ -306,6 +357,107 @@
                 </section>            
                 
                 <section id="blog">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12 text-center">
+				<h2 class="section_header">Blog Posts</h2>
+				<hr class="header_divider">
+				<p class="small-text big">Check out our newest music albums. You can easily purchase our music albums on <span class="highlight3">iTunes</span> or <span class="highlight3">Google Play</span>.</p>
+                            </div>
+			</div>
+                        <div class="row">                     
+                            <div class="col-sm-12">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        <div class="col">
+            <article class="post vertical-item content-padding with_shadow text-center">
+                <div class="item-media entry-thumbnail">
+                    <div class="embed-responsive embed-responsive-3by2">
+                        <a href="https://www.youtube.com/embed/mcixldqDIEQ" class="embed-placeholder">
+                            <img src="assets/img/blog-01.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="item-content">
+                    <h4 class="entry-title"><a href="blog-single-right.html">The crowd - life in other people's dreams</a></h4>
+                    <div class="small-text greylinks inline-content">
+                        <a href="#0"><i class="fa fa-heart rightpadding_5" aria-hidden="true"></i><span class="value fontcolor">850</span></a>
+                        <a href="#0"><i class="fa fa-comment rightpadding_5" aria-hidden="true"></i><span class="value fontcolor">958</span></a>
+                        <span><i class="fa fa-eye rightpadding_5" aria-hidden="true"></i><span class="value fontcolor">3698</span></span>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="col">
+            <article class="post vertical-item content-padding with_shadow text-center">
+                <div class="item-media entry-thumbnail">
+                    <div class="embed-responsive embed-responsive-3by2">
+                        <a href="https://www.youtube.com/embed/mcixldqDIEQ" class="embed-placeholder">
+                            <img src="assets/img/blog-01.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="item-content">
+                    <h4 class="entry-title"><a href="blog-single-right.html">The crowd - life in other people's dreams</a></h4>
+                    <div class="small-text greylinks inline-content">
+                        <a href="#0"><i class="fa fa-heart rightpadding_5" aria-hidden="true"></i><span class="value fontcolor">850</span></a>
+                        <a href="#0"><i class="fa fa-comment rightpadding_5" aria-hidden="true"></i><span class="value fontcolor">958</span></a>
+                        <span><i class="fa fa-eye rightpadding_5" aria-hidden="true"></i><span class="value fontcolor">3698</span></span>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="col">
+            <article class="post vertical-item content-padding with_shadow text-center">
+                <div class="item-media entry-thumbnail">
+                    <div class="embed-responsive embed-responsive-3by2">
+                        <a href="https://www.youtube.com/embed/mcixldqDIEQ" class="embed-placeholder">
+                            <img src="assets/img/blog-01.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="item-content">
+                    <h4 class="entry-title"><a href="blog-single-right.html">The crowd - life in other people's dreams</a></h4>
+                    <div class="small-text greylinks inline-content">
+                        <a href="#0"><i class="fa fa-heart rightpadding_5" aria-hidden="true"></i><span class="value fontcolor">850</span></a>
+                        <a href="#0"><i class="fa fa-comment rightpadding_5" aria-hidden="true"></i><span class="value fontcolor">958</span></a>
+                        <span><i class="fa fa-eye rightpadding_5" aria-hidden="true"></i><span class="value fontcolor">3698</span></span>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="col">
+            <article class="post vertical-item content-padding with_shadow text-center">
+                <div class="item-media entry-thumbnail">
+                    <div class="embed-responsive embed-responsive-3by2">
+                        <a href="https://www.youtube.com/embed/mcixldqDIEQ" class="embed-placeholder">
+                            <img src="assets/img/blog-01.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="item-content">
+                    <h4 class="entry-title"><a href="blog-single-right.html">The crowd - life in other people's dreams</a></h4>
+                    <div class="small-text greylinks inline-content">
+                        <a href="#0"><i class="fa fa-heart rightpadding_5" aria-hidden="true"></i><span class="value fontcolor">850</span></a>
+                        <a href="#0"><i class="fa fa-comment rightpadding_5" aria-hidden="true"></i><span class="value fontcolor">958</span></a>
+                        <span><i class="fa fa-eye rightpadding_5" aria-hidden="true"></i><span class="value fontcolor">3698</span></span>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <!-- Add more similar columns as needed -->
+    </div>
+    <!-- eof .row -->
+    <!-- eof .row -->
+</div>
+                        </div>
+                    </div>
+                </section>
+                
+                <section id="playlists">
+                    
+                </section>
+                
+                <section id="trending">
                     
                 </section>
                 

@@ -87,7 +87,7 @@
                             <div class="col-sm-5 col-md-4 col-lg-4 order-sm-1 order-md-2 order-lg-2">
                                 <div class="widget widget_search">
                     <h3 class="widget-title">Search Artist</h3>
-                    <form method="get" class="searchform" action="./">
+                    <form method="get" class="searchform" action="">
                         <div class="form-group">
                             <label class="sr-only" for="widget-search">Search:</label>
                             <input id="widget-search" type="text" value="" name="search" class="form-control" placeholder="Search Keyword">

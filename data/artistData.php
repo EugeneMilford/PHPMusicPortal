@@ -1,6 +1,6 @@
 <?php
 
-$name = $_GET["find"];
+$name = filter_input(INPUT_GET, 'search', FILTER_SANITIZE_STRING);
 
 $xyz = urlencode(utf8_encode($name));
 

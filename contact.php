@@ -35,7 +35,7 @@
                                     </ul>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="artists.html">Artists</a>
+                                    <a class="nav-link" href="artists.php">Artists</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="videos.html">Music Videos</a>
@@ -47,13 +47,13 @@
                                     <a class="nav-link" href="blog.php">Blog</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="playlists.html">Playlists</a>
+                                    <a class="nav-link" href="playlists.php">Playlists</a>
                                 </li>
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Extras</a>
                                     <ul class="dropdown-menu">
                                         <li><a class="dropdown-item" href="trending.html">Trending Music</a></li>
-                                        <li><a class="dropdown-item" href="top_10.html">Top 10 Albums Of All Time</a></li>
+                                        <li><a class="dropdown-item" href="top_10.php">Top 10 Albums Of All Time</a></li>
                                     </ul>
                                 </li>
                                 <li class="nav-item">

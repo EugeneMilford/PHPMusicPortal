@@ -25,6 +25,9 @@
                                     <a class="nav-link active" href="index.php">Home</a>
                                 </li>
                                 <li class="nav-item">
+                                    <a class="nav-link" href="faves.php">Favourites</a>
+                                </li>
+                                <li class="nav-item">
                                     <a class="nav-link" href="albums.php">Music</a>
                                     <ul class="dropdown-menu">
                                         <li><a class="dropdown-item" href="albums.php">Albums</a></li>
@@ -141,117 +144,11 @@
                         </div>
                         <br>
                         <div class="row">
-                            <div class="col-md-6">
-                                <article class="post format-small-image">
-                                    <div class="side-item side-md content-padding big-padding shadow">
-                                        <div class="row">
-                                            <div class="col-md-5">
-                                                <div class="item-media entry-thumbnail">
-                                                    <img src="assets/img/04.jpg" alt="" class="img-fluid">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-7">
-                                                <div class="item-content">
-                                                    <header class="entry-header">
-                                                        <h4 class="entry-title"> 
-                                                            <a href="blog-single-left.html">Post With Small Image</a> 
-                                                        </h4>
-                                                    </header>
-                                                    <div class="entry-content">
-                                                        <p>Pork chop pig prosciutto beef ribs ribeye brisket doner corned beef cupim frankfurter. Pancetta shoulder jerky, tenderloin cupim tail ribeye bresaola short ribs pig frankfurter doner ground round andouille.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
-                            </div>
-                            <div class="col-md-6">
-                                <article class="post format-small-image">
-                                    <div class="side-item side-md content-padding big-padding shadow">
-                                        <div class="row">
-                                            <div class="col-md-5">
-                                                <div class="item-media entry-thumbnail">
-                                                    <img src="assets/img/04.jpg" alt="" class="img-fluid">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-7">
-                                                <div class="item-content">
-                                                    <header class="entry-header">
-                                                        <h4 class="entry-title"> 
-                                                            <a href="blog-single-left.html">Second Post With Small Image</a> 
-                                                        </h4>
-                                                    </header>
-                                                    <div class="entry-content">
-                                                        <p>Second article content goes here.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <article class="post format-small-image">
-                                    <div class="side-item side-md content-padding big-padding shadow">
-                                        <div class="row">
-                                            <div class="col-md-5">
-                                                <div class="item-media entry-thumbnail">
-                                                    <img src="assets/img/04.jpg" alt="" class="img-fluid">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-7">
-                                                <div class="item-content">
-                                                    <header class="entry-header">
-                                                        <h4 class="entry-title"> 
-                                                            <a href="blog-single-left.html">Post With Small Image</a> 
-                                                        </h4>
-                                                    </header>
-                                                    <div class="entry-content">
-                                                        <p>Pork chop pig prosciutto beef ribs ribeye brisket doner corned beef cupim frankfurter. Pancetta shoulder jerky, tenderloin cupim tail ribeye bresaola short ribs pig frankfurter doner ground round andouille.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
-                            </div>
-                            <div class="col-md-6">
-                                <article class="post format-small-image">
-                                    <div class="side-item side-md content-padding big-padding shadow">
-                                        <div class="row">
-                                            <div class="col-md-5">
-                                                <div class="item-media entry-thumbnail">
-                                                    <img src="assets/img/04.jpg" alt="" class="img-fluid">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-7">
-                                                <div class="item-content">
-                                                    <header class="entry-header">
-                                                        <h4 class="entry-title"> 
-                                                            <a href="blog-single-left.html">Second Post With Small Image</a> 
-                                                        </h4>
-                                                    </header>
-                                                    <div class="entry-content">
-                                                        <p>Second article content goes here.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
-                            </div>
-                        </div>
+                            <?php include 'data/indexData.php'?>
+                        </div>     
                     </div>
                 </section>   
-                
-                <section id="tracks">
-                    
-                </section>
-    
+
                 <section id="albums" class="ls section_padding_top_100 section_padding_bottom_100 columns_margin_bottom_30">
                     <div class="container">
 			<div class="row">

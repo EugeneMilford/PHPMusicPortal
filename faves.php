@@ -73,6 +73,22 @@
         </div>
     </div>
 </section>
+            
+            <section id="blog">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12 text-center">
+				<h2 class="section_header">Blog Posts</h2>
+				<hr class="header_divider">
+				<p class="small-text big">Check out our newest music albums. You can easily purchase our music albums on <span class="highlight3">iTunes</span> or <span class="highlight3">Google Play</span>.</p>
+                            </div>
+			</div>
+                        <div class="row" id="faves">
+                            
+                        </div>
+                    </div>
+            </section>
+                        
                 
                 <!-- Contact Section -->
 		

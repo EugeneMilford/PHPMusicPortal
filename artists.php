@@ -84,7 +84,8 @@
                 <section class="section_padding_top_40 section_padding_bottom_100">
                     <div class="container">
                         <div class="row">
-                            <div class="col-sm-5 col-md-4 col-lg-4 order-sm-1 order-md-2 order-lg-2">
+                            <div class="col-6">
+                                <div class="col-sm-8 col-md-4 col-lg-4 order-sm-1 order-md-2 order-lg-2">
                                 <div class="widget widget_search">
                     <h3 class="widget-title">Search Artist</h3>
                     <form method="get" class="searchform" action="">
@@ -96,13 +97,20 @@
                     </form>
                 </div>
                             </div>
+                            </div>
+                            <div class="col-6">
+                                <?php include 'data/artistData.php'?>
+                            </div>
+                            
+                            
                         </div>
                     </div>
                 </section>
+
                 
-                <?php include 'data/artistData.php'?>
                 
-                <section class="ds page_copyright py-4 fixed-bottom">
+                
+                <section class="ds page_copyright py-4">
                     <div class="container">
                         <div class="row">
                             <div class="col-sm-12 text-center">
@@ -120,4 +128,14 @@
             </div>
         </div>
     </body>
+    <script>
+        function addToFavorites() {
+            // Get the content to be saved
+            var content = document.getElementById('art').innerHTML;
+            // Save content to localStorage
+            localStorage.setItem('faves', content);
+            // Redirect to page 2
+            window.location.href = 'artists.php';
+        }
+    </script>
 </html>

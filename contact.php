@@ -7,7 +7,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-        <link href="assets/css/music.css" rel="stylesheet">
+
+
+        <link rel="stylesheet" type="text/css" href="assets/css/music.css">
+        
         <link href="https://fonts.cdnfonts.com/css/apple-chancery" rel="stylesheet">
     </head>
     <body>
@@ -52,7 +55,7 @@
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Extras</a>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="trending.html">Trending Music</a></li>
+                                        <li><a class="dropdown-item" href="trending.php">Trending Music</a></li>
                                         <li><a class="dropdown-item" href="top_10.php">Top 10 Albums Of All Time</a></li>
                                     </ul>
                                 </li>
@@ -65,7 +68,7 @@
                 </header>
  
                 <!-- -Breadcrumbs Section -->
-                <section class="page_breadcrumbs cs gradient section_padding_top_75 section_padding_bottom_25 table_section table_section_md">
+                <section class="page_breadcrumbs cs gradient section_padding_top_75 section_padding_bottom_25 table_section table_section_md" style="margin-top: 25px;">
                     <div class="container">
                         <div class="row">
                             <div class="col-md-6 text-center text-md-start">
@@ -74,7 +77,7 @@
                             <div class="col-md-6 text-center text-md-end">
                                 <nav aria-label="breadcrumb">
                                     <ol class="breadcrumb">
-                                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                        <li class="breadcrumb-item"><a href="./">Home</a></li>
                                         <li class="breadcrumb-item active"><a href="#">Contact</a></li>
                                     </ol>
                                 </nav>
@@ -132,7 +135,7 @@
                                         </div>
                                         <div class="col-sm-12 mb-0">
                                             <div class="contact-form-submit mt-3">
-                                                <button type="submit" id="contact_form_submit" name="contact_submit" class="btn submit_button wide_button m-0">Send message</button>
+                                                <button type="submit" id="contact_form_submit" name="contact_submit" class="button_2">Send message</button>
                                             </div>
                                         </div>
                                     </div>

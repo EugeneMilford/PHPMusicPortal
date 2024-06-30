@@ -59,26 +59,45 @@
         </div>
     </div>
 </header>
-            
-                
-                
-                <div class="col-sm-3 widget widget_search">
+
+                <section class="section_padding_top_40 section_padding_bottom_100">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="col-sm-8 col-md-4 col-lg-4 order-sm-1 order-md-2 order-lg-2">
+                                <div class="widget widget_search">
+                    <h3 class="widget-title">Search Artist</h3>
                     <form method="get" class="searchform" action="">
-                        <div class="input-group">
-                            <input id="widget-search" type="text" name="find" class="form-control" placeholder="Search Artist" aria-label="Search for">
-                            <button type="submit" class="btn btn-primary">Search</button>
+                        <div class="form-group">
+                            <label class="sr-only" for="widget-search">Search:</label>
+                            <input id="widget-search" type="text" value="" name="search" class="form-control" placeholder="Search Keyword">
                         </div>
+                        <button type="submit" class="submit_button">Search</button>
                     </form>
                 </div>
-
-                
+                            </div>
+                            </div>
+                            <div class="col-6">
+                                <?php include 'data/albumData.php'?>
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+                </section>
                         
                 <!-- Footer Section -->
-		<section class="ds page_copyright section_padding_25 fixed-bottom">
+		<section class="ds page_copyright py-4">
                     <div class="container">
                         <div class="row">
                             <div class="col-sm-12 text-center">
-                                <p class="small-text big-spacing">&copy; Copyright 2023. All Rights Reserved.</p>
+                                <div class="d-flex justify-content-center align-items-center mb-2">
+                                    <a class="social-icon socicon-facebook me-2" href="#" title="Facebook"></a>
+                                    <a class="social-icon socicon-twitter me-2" href="#" title="Twitter"></a>
+                                    <a class="social-icon socicon-youtube me-2" href="#" title="Youtube"></a>
+                                    <a class="social-icon socicon-google me-2" href="#" title="Google"></a>
+                                </div>
+                                <p class="small-text mb-0">&copy; Copyright 2024. All Rights Reserved.</p>
                             </div>
                         </div>
                     </div>

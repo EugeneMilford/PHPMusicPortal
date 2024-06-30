@@ -51,14 +51,13 @@ echo "</div>";
 echo "<h4 class='entry-title'> <a href='event-single-left.html'>".$search['artists'][0]['strArtist']."</a></h4>";
 echo "</header>";
 echo "<div class='entry-content'>";
-echo "<p>Short artist description.</p>";
-echo"<button data-bs-toggle='modal' data-bs-target='#artistDetail'>View Description</button>";
+echo "<p>Genre: ".$search['artists'][0]['strGenre']."</p>";
+echo "<p>Year Formed: ".$search['artists'][0]['intBornYear']."</p>";
+echo"<button class='button_5' data-bs-toggle='modal' data-bs-target='#artistDetail'>View Description</button>";
 echo "</div>";
 echo "</div>";
 echo "</article>";
 echo "</div>";
-
-
 
 echo "</div>";
 echo "</div>";
@@ -76,8 +75,8 @@ echo "<p>Style : ".$search['artists'][0]['strStyle']."</p>";
 echo "<p>Biography : ".$search['artists'][0]['strBiographyEN']."</p>";
 echo "</div>";
 echo "<div class='modal-footer'>";
-echo "<button type='button' class='btn btn-secondary' data-bs-dismiss='modal'>Close</button>";
-echo "<button type='button' onclick='addToFavorites()' class='btn btn-primary'>Save to faves</button>";
+echo "<button type='button' class='button_3' data-bs-dismiss='modal'>Close</button>";
+echo "<button type='button' onclick='addToFavorites()' class='button_2'>Save to faves</button>";
 echo "</div>";
 echo "</div>";
 echo "</div>";

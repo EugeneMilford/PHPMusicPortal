@@ -15,7 +15,7 @@
             <div id="box_wrapper">
                 <header class="navbar navbar-expand-lg fixed-top">
                     <div class="container">
-                        <a class="navbar-brand" href="index.php">Your Brand Name</a>
+                        <a class="navbar-brand" href="index.php">Music Portal</a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
@@ -42,6 +42,9 @@
                                     <a class="nav-link" href="tracks.php">Tracks</a>
                                 </li>
                                 <li class="nav-item">
+                                    <a class="nav-link" href="albums.php">Albums</a>
+                                </li>
+                                <li class="nav-item">
                                     <a class="nav-link" href="videos.html">Music Videos</a>
                                 </li>
                                 <li class="nav-item">
@@ -56,7 +59,7 @@
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Extras</a>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="trending.html">Trending Music</a></li>
+                                        <li><a class="dropdown-item" href="trending.php">Trending Music</a></li>
                                         <li><a class="dropdown-item" href="top_10.php">Top 10 Albums Of All Time</a></li>
                                     </ul>
                                 </li>

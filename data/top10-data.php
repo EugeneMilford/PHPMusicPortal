@@ -2,7 +2,7 @@
 
 $curl = curl_init();
 
-curl_setopt($curl, CURLOPT_URL, "https://theaudiodb.p.rapidapi.com/mostloved.php?format=album");
+curl_setopt($curl, CURLOPT_URL, "https://theaudiodb.p.rapidapi.com/trending.php?country=us&type=itunes&format=singles");
 curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
 curl_setopt($curl, CURLOPT_FOLLOWLOCATION, true);
@@ -12,8 +12,8 @@ curl_setopt($curl, CURLOPT_TIMEOUT, 30);
 curl_setopt($curl, CURLOPT_HTTP_VERSION, CURL_HTTP_VERSION_1_1);
 curl_setopt($curl, CURLOPT_CUSTOMREQUEST, "GET");
 curl_setopt($curl, CURLOPT_HTTPHEADER, [
-	"X-RapidAPI-Host: theaudiodb.p.rapidapi.com",
-	"X-RapidAPI-Key: 2dbc831825msh84a073d47a621bap17f4cfjsn8a5f2a3cea0d"
+	"x-rapidapi-host: theaudiodb.p.rapidapi.com",
+	"x-rapidapi-key: 2dbc831825msh84a073d47a621bap17f4cfjsn8a5f2a3cea0d"
 	]);
 
 $response = curl_exec($curl);
@@ -23,11 +23,12 @@ curl_close($curl);
 
 $top10 = json_decode($response, true);
 
-// print_r($top10);
- 
+print_r($top10);
+
+
 for ($i = 0; $i < 10; $i++) {  
     
-$img = $top10['loved'][$i]['strAlbumThumb'];
+$img = $top10['trending'][$i]['strTrackThumb'];
 $imageData = base64_encode(file_get_contents($img));
     
 echo "<section class='ls section_padding_top_150 section_padding_bottom_130 columns_padding_25'>";
@@ -46,11 +47,9 @@ echo "</div>";
 echo "<div class='col-md-7'>";
 echo "<div class='item-content'>";
 echo "<h4 class='entry-title'> <a href='event-single-left.html'>Artist: ".$top10['loved'][$i]['strArtist']."</a></h4>";
-echo "<p class='card-text'> Artist: ".$top10['loved'][$i]['strArtist']."</p>";
-echo "<p class='card-text'> Album: ".$top10['loved'][$i]['strAlbum']."</p>";
-echo "<p class='card-text'> Year Released: ".$top10['loved'][$i]['intYearReleased']."</p>";
-echo "<p class='card-text'>Genre: ".$top10['loved'][$i]['strGenre']."</p>";
-echo "<p class='card-text'>Sales: ".$top10['loved'][$i]['intSales']."</p>";
+echo "<p class='card-text'> Artist: ".$top10['trending'][$i]['strArtist']."</p>";
+echo "<p class='card-text'> Track: ".$top10['trending'][$i]['strTrack']."</p>";
+echo "<p class='card-text'> Album: ".$top10['trending'][$i]['strAlbum']."</p>";
 echo "<div> <a class='theme_button color' href='data-files/top10-description-data.php'>View Description</a></div>";
 echo "</div>";
 echo "</div>";

@@ -1,31 +1,31 @@
 <!DOCTYPE html>
-
 <html>
     <head>
         <title>Artists</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-  
-        <!-- Bootstrap JS Bundle (with Popper) -->
         <script src="assets/js/bootstrap.bundle.min.js"></script>
         <link href="assets/css/music.css" rel="stylesheet">
         <link href="https://fonts.cdnfonts.com/css/apple-chancery" rel="stylesheet">
+        
     </head>
     <body>
         <div id="canvas">
             <div id="box_wrapper">
-                <!-- Header Section-->
                 <header class="navbar navbar-expand-lg fixed-top">
                     <div class="container">
-                        <a class="navbar-brand" href="index.php">Your Brand Name</a>
+                        <a class="navbar-brand" href="index.php">Music Portal</a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarNav">
                             <ul class="navbar-nav ms-auto">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="index.php">Home</a>
+                                    <a class="nav-link active" href="index.php">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="faves.php">Favourites</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="albums.php">Music</a>
@@ -36,7 +36,13 @@
                                     </ul>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="artists.html">Artists</a>
+                                    <a class="nav-link" href="artists.php">Artists</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="tracks.php">Tracks</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="albums.php">Albums</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="videos.html">Music Videos</a>
@@ -48,7 +54,7 @@
                                     <a class="nav-link" href="blog.php">Blog</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="playlists.html">Playlists</a>
+                                    <a class="nav-link" href="playlists.php">Playlists</a>
                                 </li>
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Extras</a>
@@ -58,12 +64,12 @@
                                     </ul>
                                 </li>
                                 <li class="nav-item">
-                                <a class="nav-link" href="contact.php">Contact Us</a>
+                                    <a class="nav-link" href="contact.php">Contact Us</a>
                                 </li>
                             </ul>
                         </div>
                     </div>
-                </header>
+                </header> 
                 
                 <section class="page_breadcrumbs cs gradient section_padding_top_40 section_padding_bottom_25 table_section table_section_md" style="margin-top: 50px;">
                     <div class="container">
@@ -119,15 +125,20 @@
                 </section>
             </div>
         </div>
+        <script>
+    function addToFavorites() {
+        var artistName = "<?php echo $search['artists'][0]['strArtist']; ?>";
+        var artistImg = "<?php echo $search['artists'][0]['strArtistThumb']; ?>";
+        var artistGenre = "<?php echo $search['artists'][0]['strGenre']; ?>";
+        var artistYear = "<?php echo $search['artists'][0]['intBornYear']; ?>";
+
+        var favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+        favorites.push({ name: artistName, img: artistImg, genre: artistGenre, year: artistYear });
+        localStorage.setItem('favorites', JSON.stringify(favorites));
+
+        alert('Artist added to favorites');
+        console.log("Favorites: ", JSON.stringify(favorites)); // Debugging line
+    }
+</script>
     </body>
-    <script>
-        function addToFavorites() {
-            // Get the content to be saved
-            var content = document.getElementById('art').innerHTML;
-            // Save content to localStorage
-            localStorage.setItem('faves', content);
-            // Redirect to page 2
-            window.location.href = 'artists.php';
-        }
-    </script>
 </html>

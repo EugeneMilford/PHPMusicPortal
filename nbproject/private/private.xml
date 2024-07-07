@@ -5,11 +5,8 @@
         <group>
             <file>file:/C:/wamp64/www/Music%20Portal/data/albumData.php</file>
             <file>file:/C:/wamp64/www/Music%20Portal/albums.php</file>
-            <file>file:/C:/wamp64/www/Music%20Portal/contact.php</file>
-            <file>file:/C:/wamp64/www/Music%20Portal/blog.php</file>
+            <file>file:/C:/wamp64/www/Music%20Portal/faves.php</file>
             <file>file:/C:/wamp64/www/Music%20Portal/artists.php</file>
-            <file>file:/C:/wamp64/www/Music%20Portal/data/artistData.php</file>
-            <file>file:/C:/wamp64/www/Music%20Portal/assets/css/music.css</file>
             <file>file:/C:/wamp64/www/Music%20Portal/index.php</file>
         </group>
     </open-files>

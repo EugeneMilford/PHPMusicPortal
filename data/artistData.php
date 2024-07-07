@@ -16,9 +16,9 @@ curl_setopt($curl, CURLOPT_TIMEOUT, 30);
 curl_setopt($curl, CURLOPT_HTTP_VERSION, CURL_HTTP_VERSION_1_1);
 curl_setopt($curl, CURLOPT_CUSTOMREQUEST, "GET");
 curl_setopt($curl, CURLOPT_HTTPHEADER, [
-	"X-RapidAPI-Host: theaudiodb.p.rapidapi.com",
-	"X-RapidAPI-Key: 2dbc831825msh84a073d47a621bap17f4cfjsn8a5f2a3cea0d"
-	]);
+    "X-RapidAPI-Host: theaudiodb.p.rapidapi.com",
+    "X-RapidAPI-Key: 2dbc831825msh84a073d47a621bap17f4cfjsn8a5f2a3cea0d"
+    ]);
 
 $response = curl_exec($curl);
 $err = curl_error($curl);
@@ -27,14 +27,11 @@ curl_close($curl);
 
 $search = json_decode($response, true);
 
- //print_r($search); 
-
 $img = $search['artists'][0]['strArtistThumb'];
 $imageData = base64_encode(file_get_contents($img));
 
 echo "<section class='ls section_padding_top_70 section_padding_bottom_130 columns_padding_25'>";
 echo "<div class='container'>";
-
 
 echo "<div class='row'>";
 echo "<div class='col-sm-7 col-md-8 col-lg-8 col-sm-push-5 col-md-push-4 col-lg-push-4'>";
@@ -54,6 +51,7 @@ echo "<div class='entry-content'>";
 echo "<p>Genre: ".$search['artists'][0]['strGenre']."</p>";
 echo "<p>Year Formed: ".$search['artists'][0]['intBornYear']."</p>";
 echo"<button class='button_5' data-bs-toggle='modal' data-bs-target='#artistDetail'>View Description</button>";
+echo "<button type='button' onclick='addToFavorites()' class='button_2'>Save to Favorites</button>";
 echo "</div>";
 echo "</div>";
 echo "</article>";
@@ -74,19 +72,16 @@ echo "<p>Year Formed : ".$search['artists'][0]['intFormedYear']."</p>";
 echo "<p>Style : ".$search['artists'][0]['strStyle']."</p>";
 echo "<p>Biography : ".$search['artists'][0]['strBiographyEN']."</p>";
 echo "</div>";
+
 echo "<div class='modal-footer'>";
 echo "<button type='button' class='button_3' data-bs-dismiss='modal'>Close</button>";
-echo "<button type='button' onclick='addToFavorites()' class='button_2'>Save to faves</button>";
+echo "<button type='button' onclick='addToFavorites()' class='button_2'>Save to Favorites</button>";
 echo "</div>";
+
 echo "</div>";
 echo "</div>";
 echo "</div>";
 
 echo "</div>";
 echo "</section>";
-
-
-
-
-
-
+?>

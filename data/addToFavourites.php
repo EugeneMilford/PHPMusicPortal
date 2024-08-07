@@ -11,5 +11,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['artistData'])) {
 } else {
     echo "Error: No artist data received.";
 }
-?>
+
+if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['albumData'])) {
+    $albumData = json_decode($_POST['albumData'], true);
+
+    // Example of saving to session (you may want to save to database instead)
+    $_SESSION['favorite_albums'][] = $albumData;
+
+    echo "Album added to favorites!";
+} else {
+    echo "Error: No album data received.";
+}
 

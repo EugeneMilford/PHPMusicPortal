@@ -90,7 +90,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-sm-12 text-center">
-                                <h2 class="section_header">Favorites</h2>
+                                <h2 class="section_header">Favorite Artists</h2>
                                 <hr class="header_divider">
                                 <p class="small-text big">Your favorite artists are listed below.</p>
                                 <button class="btn btn-warning mb-4" onclick="clearFavorites()">Clear All Favorites</button>
@@ -99,8 +99,23 @@
                         <div class="row" id="faves">
                             
                         </div>
+                        
+                        <div class="row">
+                            <div class="col-sm-12 text-center">
+                                <h2 class="section_header">Favorite Albums</h2>
+                                <hr class="header_divider">
+                                <p class="small-text big">Your favorite artists are listed below.</p>
+                                <button class="btn btn-warning mb-4" onclick="clearFavorites()">Clear All Favorites</button>
+                            </div>
+                        </div>
+                        <div class="row" id="favouriteAlbums">
+                            
+                        </div>
                     </div>
                 </section>
+                
+                <br>
+ 
                 
                 <section class="ds page_copyright py-4">
                     <div class="container">

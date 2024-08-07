@@ -7,8 +7,7 @@
         <link href="assets/css/bootstrap.min.css" rel="stylesheet">
         <script src="assets/js/bootstrap.bundle.min.js"></script>
         <link href="assets/css/music.css" rel="stylesheet">
-        <link href="https://fonts.cdnfonts.com/css/apple-chancery" rel="stylesheet">
-        
+        <link href="https://fonts.cdnfonts.com/css/apple-chancery" rel="stylesheet">       
     </head>
     <body>
         <div id="canvas">
@@ -28,14 +27,6 @@
                                     <a class="nav-link" href="faves.php">Favourites</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="albums.php">Music</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="albums.php">Albums</a></li>
-                                        <li><a class="dropdown-item" href="tracks.php">Tracks</a></li>
-                                        <li><a class="dropdown-item" href="playlists.php">Playlists</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item">
                                     <a class="nav-link" href="artists.php">Artists</a>
                                 </li>
                                 <li class="nav-item">
@@ -45,23 +36,13 @@
                                     <a class="nav-link" href="albums.php">Albums</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="videos.html">Music Videos</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="gallery.html">Gallery</a>
-                                </li>
-                                <li class="nav-item">
                                     <a class="nav-link" href="blog.php">Blog</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="playlists.php">Playlists</a>
                                 </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Extras</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="trending.php">Trending Music</a></li>
-                                        <li><a class="dropdown-item" href="top_10.php">Top 10 Albums Of All Time</a></li>
-                                    </ul>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="trending.php">Trending</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="contact.php">Contact Us</a>
@@ -69,7 +50,7 @@
                             </ul>
                         </div>
                     </div>
-                </header> 
+                </header>   
                 
                 <section class="page_breadcrumbs cs gradient section_padding_top_40 section_padding_bottom_25 table_section table_section_md" style="margin-top: 50px;">
                     <div class="container">
@@ -95,16 +76,16 @@
                             <div class="col-6">
                                 <div class="col-sm-8 col-md-4 col-lg-4 order-sm-1 order-md-2 order-lg-2">
                                 <div class="widget widget_search">
-                    <h3 class="widget-title">Search Artist</h3>
-                    <form method="get" class="searchform" action="">
-                        <div class="form-group">
-                            <label class="sr-only" for="widget-search">Search:</label>
-                            <input id="widget-search" type="text" value="" name="search" class="form-control" placeholder="Search Artist">
-                        </div>
-                        <br>
-                        <button type="submit" class="button_1">Search</button>
-                    </form>
-                </div>
+                                    <h3 class="widget-title">Search Artist</h3>
+                                    <form method="get" class="searchform" action="">
+                                        <div class="form-group">
+                                            <label class="sr-only" for="widget-search">Search:</label>
+                                            <input id="widget-search" type="text" value="" name="search" class="form-control" placeholder="Search Artist">
+                                        </div>
+                                        <br>
+                                        <button type="submit" class="button_1">Search</button>
+                                    </form>
+                                </div>
                             </div>
                             </div>
                             <div class="col-6">

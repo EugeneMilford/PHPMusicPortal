@@ -33,23 +33,55 @@ if ($err) {
     
 $search = json_decode($response, true);
 
+// Print the search results
 //print_r($search); 
-    
+
 echo "<div class='container'>";
-for ($i = 0; $i < 4; $i++) {
 echo "<div class='row'>";
-echo "<p>Artist: ".$search['album'][$i]['strArtist']."</p>";
-echo "<p>Album: ".$search['album'][$i]['strAlbum']."</p>";
-echo "<p>Year Released: ".$search['album'][$i]['intYearReleased']."</p>";
-echo "</div>";
-    } 
-echo "</div>";
-} 
+
+for ($i = 0; $i < 4; $i++) {
+    $img = $search['album'][$i]['strAlbumThumb'];
+    $imageData = base64_encode(file_get_contents($img));
     
+    echo "<div class='col-md-3'>";  // 4 cards per row
+    echo "<div class='card mb-4'>";
+    echo "<img src='data:image/jpeg;base64,$imageData' class='card-img-top' alt='Album Image'>";
+    echo "<div class='card-body'>";
+    echo "<h5 class='card-title'>".$search['album'][$i]['strAlbum']."</h5>";
+    echo "<p class='card-text'><strong>Artist:</strong> ".$search['album'][$i]['strArtist']."</p>";
+    echo "<p class='card-text'><strong>Year Released:</strong> ".$search['album'][$i]['intYearReleased']."</p>";
+    echo "<p class='card-text'><strong>Style:</strong> ".$search['album'][$i]['strStyle']."</p>";
+    echo "<button type='button' class='button_5' data-bs-toggle='modal' data-bs-target='#albumDetailModal$i'>View Details</button>";
+    echo "<br>";
+    echo "<br>";
+    echo "<button type='button' onclick='addToFavorites()' class='button_2'>Save to Favorites</button>";
+    echo "</div>";
+    echo "</div>";
+    echo "</div>";
+    
+    // Modal for each album
+    echo "<div class='modal fade' id='albumDetailModal$i' tabindex='-1' aria-labelledby='albumDetailLabel$i' aria-hidden='true'>";
+    echo "<div class='modal-dialog modal-dialog-centered modal-dialog-scrollable'>";
+    echo "<div class='modal-content'>";
+    echo "<div class='modal-header'>";
+    echo "<h5 class='modal-title' id='albumDetailLabel$i'>".$search['album'][$i]['strAlbum']."</h5>";
+    echo "<button type='button' class='btn-close' data-bs-dismiss='modal' aria-label='Close'></button>";
+    echo "</div>";
+    echo "<div class='modal-body'>";
+    echo "<p><strong>Artist:</strong> ".$search['album'][$i]['strArtist']."</p>";
+    echo "<p><strong>Year Released:</strong> ".$search['album'][$i]['intYearReleased']."</p>";
+    echo "<p><strong>Style:</strong> ".$search['album'][$i]['strStyle']."</p>";
+    echo "<p><strong>Description:</strong> ".$search['album'][$i]['strDescriptionEN']."</p>";  // Assuming there's a description
+    echo "</div>";
+    echo "<div class='modal-footer'>";
+    echo "<button type='button' class='button_3' data-bs-dismiss='modal'>Close</button>";
+    echo "<button type='button' onclick='addToFavorites()' class='button_4'>Save to Favorites</button>";
+    echo "</div>";
+    echo "</div>";
+    echo "</div>";
+    echo "</div>";
+}
 
-
-
-
-
-
-
+echo "</div>";
+echo "</div>";
+}

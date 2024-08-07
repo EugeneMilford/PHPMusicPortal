@@ -23,24 +23,19 @@
                         <div class="collapse navbar-collapse" id="navbarNav">
                             <ul class="navbar-nav ms-auto">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="index.php">Home</a>
+                                    <a class="nav-link active" href="index.php">Home</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="albums.php">Music</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="albums.php">Albums</a></li>
-                                        <li><a class="dropdown-item" href="tracks.php">Tracks</a></li>
-                                        <li><a class="dropdown-item" href="playlists.php">Playlists</a></li>
-                                    </ul>
+                                    <a class="nav-link" href="faves.php">Favourites</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="artists.php">Artists</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="videos.html">Music Videos</a>
+                                    <a class="nav-link" href="tracks.php">Tracks</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="gallery.html">Gallery</a>
+                                    <a class="nav-link" href="albums.php">Albums</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="blog.php">Blog</a>
@@ -48,12 +43,8 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="playlists.php">Playlists</a>
                                 </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Extras</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="trending.php">Trending Music</a></li>
-                                        <li><a class="dropdown-item" href="top_10.php">Top 10 Albums Of All Time</a></li>
-                                    </ul>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="trending.php">Trending</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="contact.php">Contact Us</a>
@@ -61,7 +52,7 @@
                             </ul>
                         </div>
                     </div>
-                </header>
+                </header>  
  
                 <!-- -Breadcrumbs Section -->
                 <section class="page_breadcrumbs cs gradient section_padding_top_75 section_padding_bottom_25 table_section table_section_md" style="margin-top: 25px;">
@@ -92,6 +83,9 @@
 				<hr class="header_divider">
                             </div>
 			</div>
+                        <div class="row">
+                            <?php include 'data/trendingData.php'?>
+                        </div>
                     </div>
                 </section>
 

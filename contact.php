@@ -2,15 +2,12 @@
 
 <html>
     <head>
-        <title>Music Demo</title>
+        <title>Contact</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
-
-        <link rel="stylesheet" type="text/css" href="assets/css/music.css">
-        
+        <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <link href="assets/css/home.css" rel="stylesheet">
         <link href="https://fonts.cdnfonts.com/css/apple-chancery" rel="stylesheet">
     </head>
     <body>
@@ -182,15 +179,38 @@
                     </div>
                 </section>
 
-                <section class="ds page_copyright py-4">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-sm-12 text-center">                      
-                                <p class="small-text mb-0">&copy; Copyright 2024. All Rights Reserved.</p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                <!-- Footer -->
+    <footer class="bg-dark text-white pt-4 pb-2 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>About Us</h5>
+                    <p>Your go-to platform for discovering new music and artists. Join us as we explore the world of sound.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Follow Us</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#" class="text-white"><i class="fab fa-facebook"></i> Facebook</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-white"><i class="fab fa-twitter"></i> Twitter</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-white"><i class="fab fa-instagram"></i> Instagram</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-white"><i class="fab fa-youtube"></i> YouTube</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="bg-white">
+            <div class="text-center">
+                <p class="mb-0">© 2024 Music Portal. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
             </div>
         </div>
     </body>

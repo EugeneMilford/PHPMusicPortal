@@ -1,13 +1,17 @@
 <!DOCTYPE html>
+
 <html>
     <head>
         <title>Artists</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-        <script src="assets/js/bootstrap.bundle.min.js"></script>
-        <link href="assets/css/music.css" rel="stylesheet">
-        <link href="https://fonts.cdnfonts.com/css/apple-chancery" rel="stylesheet">       
+        <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <link href="assets/css/home.css" rel="stylesheet">
+        <link href="https://fonts.cdnfonts.com/css/apple-chancery" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
     </head>
     <body>
         <div id="canvas">
@@ -94,16 +98,99 @@
                         </div>
                     </div>
                 </section>
-
-                <section class="ds page_copyright py-4">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-sm-12 text-center">
-                                <p class="small-text mb-0">&copy; Copyright 2024. All Rights Reserved.</p>
+                
+                <!-- Features Start -->
+                <div class="container-fluid feature pb-5">
+                    <div class="container pb-5">
+                        <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                            <h4 class="text-primary">Explore Music Artists</h4>
+                            <h1 class="display-5 mb-4">Discover, Connect, and Learn About Your Favorite Artists.</h1>
+                            <p class="mb-0">
+                                Our platform provides an intuitive search experience for music enthusiasts. Whether you’re looking for new talent or want to learn more about established artists, you’ve come to the right place.
+                            </p>
+                        </div>
+                        <div class="row g-4">
+                            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
+                                <div class="feature-item p-4">
+                                    <div class="feature-icon p-4 mb-4">
+                                        <i class="fas fa-search fa-4x text-primary"></i>
+                                    </div>
+                                    <h4>Artist Discovery</h4>
+                                    <p class="mb-4">
+                                        Use our powerful search tool to discover a diverse range of artists from various genres and backgrounds. Find new favorites and explore their music.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
+                                <div class="feature-item p-4">
+                                    <div class="feature-icon p-4 mb-4">
+                                        <i class="fas fa-info-circle fa-4x text-primary"></i>
+                                    </div>
+                                    <h4>Detailed Artist Profiles</h4>
+                                    <p class="mb-4">
+                                        Access comprehensive profiles that include biographies, discographies, social links, and the latest news about your favorite artists.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
+                                <div class="feature-item p-4">
+                                    <div class="feature-icon p-4 mb-4">
+                                        <i class="fas fa-play fa-4x text-primary"></i>
+                                    </div>
+                                    <h4>Listen to Music</h4>
+                                    <p class="mb-4">
+                                        Stream music directly from artist profiles. Enjoy singles, albums, and playlists all in one convenient location.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
+                                <div class="feature-item p-4">
+                                    <div class="feature-icon p-4 mb-4">
+                                        <i class="fas fa-users fa-4x text-primary"></i>
+                                    </div>
+                                    <h4>Fan Engagement</h4>
+                                    <p class="mb-4">
+                                        Follow your favorite artists and receive updates about their new releases, concerts, and events. Join a community of fans who share your passion.
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </section>
+                </div>
+
+                <!-- Footer -->
+                <footer class="bg-dark text-white pt-4 pb-2 mt-5">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <p>
+                                    Your go-to platform for discovering new music and artists. Join us as we explore the world of sound.
+                                </p>
+                            </div>
+                            <div class="col-md-4">
+                                <h5>Follow Us</h5>
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#" class="text-white"><i class="fab fa-facebook"></i> Facebook</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-white"><i class="fab fa-twitter"></i> Twitter</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-white"><i class="fab fa-instagram"></i> Instagram</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-white"><i class="fab fa-youtube"></i> YouTube</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr class="bg-white">
+                        <div class="text-center">
+                            <p class="mb-0">© 2024 Your Music Portal. All Rights Reserved.</p>
+                        </div>
+                    </div>
+                </footer>
             </div>
         </div>
         <script>

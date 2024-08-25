@@ -2,13 +2,16 @@
 
 <html>
     <head>
-        <title>Artists</title>
+        <title>Albums</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-        <script src="assets/js/bootstrap.bundle.min.js"></script>
-        <link href="assets/css/music.css" rel="stylesheet">
-        <link href="https://fonts.cdnfonts.com/css/apple-chancery" rel="stylesheet">       
+        <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <link href="assets/css/home.css" rel="stylesheet">
+        <link href="https://fonts.cdnfonts.com/css/apple-chancery" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
     </head>
     <body>
         <div id="canvas">
@@ -90,30 +93,118 @@
                             </div>
                             </div>  
                         </div>
-                        <br>
-                        <div class="row">
-                            <?php include 'data/albumData.php'?>
-                        </div>
                     </div>
                 </section>
-                        
-                <!-- Footer Section -->
-		<section class="ds page_copyright py-4">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-sm-12 text-center">
-                                <div class="d-flex justify-content-center align-items-center mb-2">
-                                    <a class="social-icon socicon-facebook me-2" href="#" title="Facebook"></a>
-                                    <a class="social-icon socicon-twitter me-2" href="#" title="Twitter"></a>
-                                    <a class="social-icon socicon-youtube me-2" href="#" title="Youtube"></a>
-                                    <a class="social-icon socicon-google me-2" href="#" title="Google"></a>
+                
+                <br>
+                <div class="row">
+                    <section id="albums" class="ls section_padding_top_100 section_padding_bottom_100 columns_margin_bottom_30">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-12 text-center">
+                                    <h2 class="section_header">Featured Music Albums</h2>
+                                    <hr class="header_divider">
+                                    <p class="small-text big">Check out our newest music albums. You can easily purchase our music albums on <span class="highlight3">iTunes</span> or <span class="highlight3">Google Play</span>.</p>
                                 </div>
-                                <p class="small-text mb-0">&copy; Copyright 2024. All Rights Reserved.</p>
+                            </div>
+                            <br>                      
+                            
+                            <?php include 'data/albumData.php'?>
+                        </div>
+                    </section>
+                </div>
+                
+                <!-- Album Features Start -->
+                <div class="container-fluid feature pb-5">
+                    <div class="container pb-5">
+                        <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                            <h4 class="text-primary">Explore Our Features</h4>
+                            <h1 class="display-5 mb-4">Bringing together music, artistry, and communities for a shared experience.</h1>
+                            <p class="mb-0">
+                                Discover a world of music where creativity flourishes and connections thrive. Our platform empowers artists and listeners alike, fostering a vibrant environment for all music enthusiasts.
+                            </p>
+                        </div>
+                        <div class="row g-4">
+                            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
+                                <div class="feature-item p-4">
+                                    <div class="feature-icon p-4 mb-4">
+                                        <i class="fas fa-music fa-4x text-primary"></i>
+                                    </div>
+                                    <h4>Curated Playlists</h4>
+                                    <p class="mb-4">
+                                        Dive into expertly curated playlists that match any mood or occasion, helping you discover new favorites and revisit beloved classics.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
+                                <div class="feature-item p-4">
+                                    <div class="feature-icon p-4 mb-4">
+                                        <i class="fas fa-user-friends fa-4x text-primary"></i>
+                                    </div>
+                                    <h4>Community Engagement</h4>
+                                    <p class="mb-4">
+                                        Join a vibrant community of music lovers and artists, where sharing passion and insights enhances the listening experience.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
+                                <div class="feature-item p-4">
+                                    <div class="feature-icon p-4 mb-4">
+                                        <i class="fas fa-star fa-4x text-primary"></i>
+                                    </div>
+                                    <h4>Exclusive Content</h4>
+                                    <p class="mb-4">
+                                        Get access to exclusive tracks, behind-the-scenes footage, and interviews that bring you closer to your favorite artists.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
+                                <div class="feature-item p-4">
+                                    <div class="feature-icon p-4 mb-4">
+                                        <i class="fas fa-headphones-alt fa-4x text-primary"></i>
+                                    </div>
+                                    <h4>Seamless Streaming</h4>
+                                    <p class="mb-4">
+                                        Enjoy high-quality music streaming with an intuitive interface, making it easy to find and enjoy your favorite tunes anytime, anywhere.
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </section>
+                </div>
+                        
+                <!-- Footer -->
+                <footer class="bg-dark text-white pt-4 pb-2 mt-5">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <p>Your go-to platform for discovering new music and artists. Join us as we explore the world of sound.</p>
+                            </div>
+                            <div class="col-md-4">
+                                <h5>Follow Us</h5>
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#" class="text-white"><i class="fab fa-facebook"></i> Facebook</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-white"><i class="fab fa-twitter"></i> Twitter</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-white"><i class="fab fa-instagram"></i> Instagram</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-white"><i class="fab fa-youtube"></i> YouTube</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr class="bg-white">
+                        <div class="text-center">
+                            <p class="mb-0">© 2024 Music Portal. All Rights Reserved.</p>
+                        </div>
+                    </div>
+                </footer>
             </div>
-        </div>    
+        </div>
     </body>
 </html>

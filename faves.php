@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>Favourites</title>
         <meta charset="UTF-8">
-        <title>Music Portal</title>
-        <link rel="stylesheet" href="assets/css/music.css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <link href="assets/css/home.css" rel="stylesheet">
+        <link href="https://fonts.cdnfonts.com/css/apple-chancery" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
     </head>
     <body>   
         <div id="canvas">
@@ -18,55 +23,19 @@
                         </button>
                         <div class="collapse navbar-collapse" id="navbarNav">
                             <ul class="navbar-nav ms-auto">
-                                <li class="nav-item">
-                                    <a class="nav-link active" href="index.php">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="faves.php">Favourites</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="albums.php">Music</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="albums.php">Albums</a></li>
-                                        <li><a class="dropdown-item" href="tracks.php">Tracks</a></li>
-                                        <li><a class="dropdown-item" href="playlists.php">Playlists</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="artists.php">Artists</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="tracks.php">Tracks</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="albums.php">Albums</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="videos.html">Music Videos</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="gallery.html">Gallery</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="blog.php">Blog</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="playlists.php">Playlists</a>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Extras</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="trending.php">Trending Music</a></li>
-                                        <li><a class="dropdown-item" href="top_10.php">Top 10 Albums Of All Time</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="contact.php">Contact Us</a>
-                                </li>
+                                <li class="nav-item"><a class="nav-link active" href="index.php">Home</a></li>
+                                <li class="nav-item"><a class="nav-link" href="faves.php">Favourites</a></li>
+                                <li class="nav-item"><a class="nav-link" href="artists.php">Artists</a></li>
+                                <li class="nav-item"><a class="nav-link" href="tracks.php">Tracks</a></li>
+                                <li class="nav-item"><a class="nav-link" href="albums.php">Albums</a></li>
+                                <li class="nav-item"><a class="nav-link" href="events.php">Events</a></li>
+                                <li class="nav-item"><a class="nav-link" href="blog.php">Blog</a></li>
+                                <li class="nav-item"><a class="nav-link" href="trending.php">Trending</a></li>
+                                <li class="nav-item"><a class="nav-link" href="contact.php">Contact Us</a></li>
                             </ul>
                         </div>
                     </div>
-                </header> 
+                </header>
                 
                 <section class="page_breadcrumbs cs gradient section_padding_top_40 section_padding_bottom_25 table_section table_section_md" style="margin-top: 50px;">
                     <div class="container">
@@ -117,15 +86,38 @@
                 <br>
  
                 
-                <section class="ds page_copyright py-4">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-sm-12 text-center">
-                                <p class="small-text mb-0">&copy; Copyright 2024. All Rights Reserved.</p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                <!-- Footer -->
+    <footer class="bg-dark text-white pt-4 pb-2 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>About Us</h5>
+                    <p>Your go-to platform for discovering new music and artists. Join us as we explore the world of sound.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Follow Us</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#" class="text-white"><i class="fab fa-facebook"></i> Facebook</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-white"><i class="fab fa-twitter"></i> Twitter</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-white"><i class="fab fa-instagram"></i> Instagram</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-white"><i class="fab fa-youtube"></i> YouTube</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="bg-white">
+            <div class="text-center">
+                <p class="mb-0">© 2024 Music Portal. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
             </div>
         </div> 
         <script>

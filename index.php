@@ -29,6 +29,7 @@
                                 <li class="nav-item"><a class="nav-link" href="artists.php">Artists</a></li>
                                 <li class="nav-item"><a class="nav-link" href="tracks.php">Tracks</a></li>
                                 <li class="nav-item"><a class="nav-link" href="albums.php">Albums</a></li>
+                                <li class="nav-item"><a class="nav-link" href="events.php">Events</a></li>
                                 <li class="nav-item"><a class="nav-link" href="blog.php">Blog</a></li>
                                 <li class="nav-item"><a class="nav-link" href="trending.php">Trending</a></li>
                                 <li class="nav-item"><a class="nav-link" href="contact.php">Contact Us</a></li>
@@ -89,28 +90,28 @@
                 </div>
 
                 <!-- About Section -->
-                <section id="about" class="ls section_padding_top_100 section_padding_bottom_40 table_section table_section_md columns_margin_bottom_30" data-aos="fade-up">
-                <div class="container">
-                    <div class="row">
-                        <div class="bg-img col-md-6">
-                            <img src="assets/img/img-about.jpg" alt="" class="img-fluid" style="width: 80%;">
-                        </div>
-                        <div class="col-md-6">
-                            <h2><span class="small">About </span> The Music Portal</h2>
-                            <hr class="header_divider">
-                            <p class="small-text big">
-                                "If Music is a Place — then Jazz is the City, Folk is the Wilderness, Rock is the Road, Classical is a Temple."
-                                <br>
-                                <br>
-                                - Vera Nazarin
-                            </p>
-                            <p>
-                                This music portal was created to connect the user through the world of music. Explore all of your favorite tracks, artists, playlists, and more.<br><br>
-                                Feel free to stay in touch and remember to keep the music flame burning bright!!
-                            </p>
+                <section id="about" class="ls section_padding_top_50 section_padding_bottom_40 table_section table_section_md columns_margin_bottom_30" data-aos="fade-up">
+                    <div class="container">
+                        <div class="row">
+                            <div class="bg-img col-md-6">
+                                <img src="assets/img/img-about.jpg" alt="" class="img-fluid" style="width: 80%;">
+                            </div>
+                            <div class="col-md-6">
+                                <h2><span class="small">About </span> The Music Portal</h2>
+                                <hr class="header_divider">
+                                <p class="small-text big">
+                                    "If Music is a Place — then Jazz is the City, Folk is the Wilderness, Rock is the Road, Classical is a Temple."
+                                    <br>
+                                    <br>
+                                    - Vera Nazarin
+                                </p>
+                                <p>
+                                    This music portal was created to connect the user through the world of music. Explore all of your favorite tracks, artists, playlists, and more.<br><br>
+                                    Feel free to stay in touch and remember to keep the music flame burning bright!!
+                                </p>
+                            </div>
                         </div>
                     </div>
-                </div>
                 </section>
             
                 <!-- About Continue -->
@@ -181,7 +182,7 @@
                 </div>
              
                 <!-- Features Start -->
-                <div class="container-fluid feature pb-5">
+                <div class="container-fluid feature pb-5 ls section_padding_top_15">
                     <div class="container pb-5">
                         <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
                             <h2 class="section_header">Bringing Music, Artists, and Fans Together</h2>
@@ -195,7 +196,9 @@
                                     </div>
                                     <h4>Artists</h4>
                                     <p class="mb-4">Dive into the diverse world of our featured artists—each with their unique sound and story. Discover emerging talents and seasoned performers who are shaping the music landscape.</p>
-                                    <a class="rounded-pill py-2 px-4 button_3" href="artists.php">Explore Artists</a>
+                                    <button class="button_3" onclick="window.location.href='artists.php'">
+                                        Explore Artists
+                                    </button>
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
@@ -205,7 +208,9 @@
                                     </div>
                                     <h4>Albums</h4>
                                     <p class="mb-4">Uncover an extensive collection of albums from various genres. From timeless classics to the latest releases, immerse yourself in a curated selection of music that resonates.</p>
-                                    <a class="btn btn-primary rounded-pill py-2 px-4 button_1" href="albums.php">Browse Albums</a>
+                                    <button class="button_3" onclick="window.location.href='albums.php'">
+                                        Browse Albums
+                                    </button>
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
@@ -215,7 +220,9 @@
                                     </div>
                                     <h4>Tracks</h4>
                                     <p class="mb-4">Listen to top tracks spanning every genre. Our collection features both established hits and breakthrough songs that are destined to climb the charts.</p>
-                                    <a class="btn btn-primary rounded-pill py-2 px-4 button_1" href="#">Listen to Tracks</a>
+                                    <button class="button_3" onclick="window.location.href='tracks.php'">
+                                        View Tracks
+                                    </button>
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
@@ -225,7 +232,9 @@
                                     </div>
                                     <h4>Trending Music</h4>
                                     <p class="mb-4">Stay ahead of the curve with our trending music section. Discover what’s hot right now and find out which artists are topping the charts.</p>
-                                    <a class="btn btn-primary rounded-pill py-2 px-4 button_1" href="trending.php">See What's Trending</a>
+                                    <button class="button_3" onclick="window.location.href='trending.php'">
+                                        See What's Trending
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -233,7 +242,7 @@
                 </div>
 
                 <!-- Artists Section -->
-                <section class="ls section_padding_top_100 section_padding_bottom_100 columns_padding_25">
+                <section class="ls section_padding_top_50 section_padding_bottom_100 columns_padding_25">
                     <div class="container">
                         <div class="row">
                             <div class="col-sm-12 text-center">
@@ -282,24 +291,24 @@
                                 </div>
                             </div>
                             <div class="col-md-4 col-sm-6">
-                            <div class="vertical-item slide-media text-center loop-color">
-                                <div class="item-media-wrap"> 
-                                    <img src="assets/img/album2.jpeg" alt="">
-                                    <div class="item-media back-media"> 
-                                        <img src="assets/img/cd.png" alt=""> 
+                                <div class="vertical-item slide-media text-center loop-color">
+                                    <div class="item-media-wrap"> 
+                                        <img src="assets/img/album2.jpeg" alt="">
+                                        <div class="item-media back-media"> 
+                                            <img src="assets/img/cd.png" alt=""> 
+                                        </div>
+                                        <div class="item-media"> 
+                                            <img class="album-image" src="assets/img/album2.jpeg" alt="">   
+                                        </div>
                                     </div>
-                                    <div class="item-media"> 
-                                        <img class="album-image" src="assets/img/album2.jpeg" alt="">   
+                                    <div class="item-content topmargin_30">
+                                        <h4 class="entry-title bottommargin_0"> 
+                                            <a href="single-album.html">Take My Soul (2017)</a> 
+                                        </h4> 
+                                        <span class="price">$109,95</span> 
                                     </div>
-                                </div>
-                                <div class="item-content topmargin_30">
-                                    <h4 class="entry-title bottommargin_0"> 
-                                        <a href="single-album.html">Take My Soul (2017)</a> 
-                                    </h4> 
-                                    <span class="price">$109,95</span> 
                                 </div>
                             </div>
-                        </div>
                         <div class="col-md-4 col-sm-6">
                             <div class="vertical-item slide-media text-center loop-color">
                                 <div class="item-media-wrap"> 
@@ -357,89 +366,77 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                        </div>
                     </div>
                 </section>
                 
-                 <!-- Testimonial Start -->
-        <div class="container text-center my-5">
-    <h1 class="mb-5">What Our Users Are Saying</h1>
-    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <div class="d-flex justify-content-center">
-                    <div class="card text-center mx-2 testimonial-card">
-                        <div class="card-body">
-                            <h5 class="card-title">John Doe</h5>
-                            <p class="card-text">"This music portal changed the way I discover new artists. The curated playlists are a lifesaver!"</p>
-                            <p class="card-text">"I appreciate the user-friendly interface that makes finding music a breeze."</p>
+                <!-- Testimonial Start -->
+                <div class="container text-center my-5">
+                    <h2 class="mb-5">What Our Users Are Saying</h2>
+                    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="d-flex justify-content-center">
+                                    <div class="card text-center mx-2 testimonial-card">
+                                        <div class="card-body">
+                                            <h5 class="card-title">John Doe</h5>
+                                            <p class="card-text">"This music portal changed the way I discover new artists. The curated playlists are a lifesaver!"</p>
+                                            <p class="card-text">"I appreciate the user-friendly interface that makes finding music a breeze."</p>
+                                        </div>
+                                    </div>
+                                    <div class="card text-center mx-2 testimonial-card">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Jane Smith</h5>
+                                            <p class="card-text">"I love the user interface and the variety of genres available. Highly recommend it to all music lovers!"</p>
+                                            <p class="card-text">"The recommendation algorithm is spot on; I discover new favorites every week!"</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="d-flex justify-content-center">
+                                    <div class="card text-center mx-2 testimonial-card">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Emily Johnson</h5>
+                                            <p class="card-text">"As an independent artist, I find this platform incredibly useful for sharing my music!"</p>
+                                            <p class="card-text">"The feedback I receive from listeners is invaluable for my growth." </p>
+                                        </div>
+                                    </div>
+                                    <div class="card text-center mx-2 testimonial-card">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Michael Brown</h5>
+                                            <p class="card-text">"The community is fantastic! I’ve met so many amazing musicians here." </p>
+                                            <p class="card-text">"It feels great to connect with others who share my passion for music!"</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="d-flex justify-content-center">
+                                    <div class="card text-center mx-2 testimonial-card">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Lisa White</h5>
+                                            <p class="card-text">"Great music recommendations! I always find hidden gems." </p>
+                                            <p class="card-text">"It’s my go-to platform for relaxing and enjoying quality music." </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="card text-center mx-2 testimonial-card">
-                        <div class="card-body">
-                            <h5 class="card-title">Jane Smith</h5>
-                            <p class="card-text">"I love the user interface and the variety of genres available. Highly recommend it to all music lovers!"</p>
-                            <p class="card-text">"The recommendation algorithm is spot on; I discover new favorites every week!"</p>
-                        </div>
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
                 </div>
-            </div>
-            <div class="carousel-item">
-                <div class="d-flex justify-content-center">
-                    <div class="card text-center mx-2 testimonial-card">
-                        <div class="card-body">
-                            <h5 class="card-title">Emily Johnson</h5>
-                            <p class="card-text">"As an independent artist, I find this platform incredibly useful for sharing my music!"</p>
-                            <p class="card-text">"The feedback I receive from listeners is invaluable for my growth." </p>
-                        </div>
-                    </div>
-                    <div class="card text-center mx-2 testimonial-card">
-                        <div class="card-body">
-                            <h5 class="card-title">Michael Brown</h5>
-                            <p class="card-text">"The community is fantastic! I’ve met so many amazing musicians here." </p>
-                            <p class="card-text">"It feels great to connect with others who share my passion for music!"</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="d-flex justify-content-center">
-                    <div class="card text-center mx-2 testimonial-card">
-                        <div class="card-body">
-                            <h5 class="card-title">Lisa White</h5>
-                            <p class="card-text">"Great music recommendations! I always find hidden gems." </p>
-                            <p class="card-text">"It’s my go-to platform for relaxing and enjoying quality music." </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
-</div>
-
-    <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-    </button>
-</div>
-
-
 
                 <!-- Blog Section -->
-                <section class="ls section_padding_top_100 section_padding_bottom_100 columns_margin_bottom_30">
+                <section class="ls section_padding_top_50 section_padding_bottom_15 columns_margin_bottom_30">
                     <div class="container">
                         <div class="row">
                             <div class="col-sm-12 text-center">
@@ -530,49 +527,49 @@
                 </section>
             
                 <!-- FAQs Start -->
-<div class="container-fluid faq-section bg-light py-5">
-    <div class="container py-5">
-        <div class="row g-5 align-items-center">
-            <div class="col-xl-6 wow fadeInLeft" data-wow-delay="0.2s">
-                <div class="h-100">
-                    <div class="mb-5">
-                        <h4 class="text-primary">Frequently Asked Questions</h4>
-                        <h1 class="display-4 mb-0">Your Music Queries Answered</h1>
-                    </div>
-                    <div class="accordion" id="accordionExample">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingOne">
-                                <button class="accordion-button border-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    Q: What can I expect during Freshers' Week?
-                                </button>
-                            </h2>
+                <div class="container-fluid faq-section bg-light py-5">
+                    <div class="container py-5">
+                        <div class="row g-5 align-items-center">
+                            <div class="col-xl-6 wow fadeInLeft" data-wow-delay="0.2s">
+                                <div class="h-100">
+                                    <div class="mb-5">
+                                        <h4 class="text-primary">Frequently Asked Questions</h4>
+                                        <h1 class="display-4 mb-0">Your Music Queries Answered</h1>
+                                    </div>
+                                    <div class="accordion" id="accordionExample">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingOne">
+                                                <button class="accordion-button border-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                    Q: What types of music can I find on this website?
+                                                </button>
+                                            </h2>
                             <div id="collapseOne" class="accordion-collapse collapse show active" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                 <div class="accordion-body rounded">
-                                    A: Freshers' Week is an exciting time filled with events, live performances, and opportunities to connect with fellow music enthusiasts. You'll discover new genres, meet artists, and experience the vibrant music culture of our community.
+                                    A:  Our website offers a diverse range of music genres, including pop, rock, hip-hop, electronic, jazz, classical, and more
                                 </div>
                             </div>
-                        </div>
+                                        </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingTwo">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    Q: How do I apply for a transfer?
+                                    Q: Can I share my favourites with others?
                                 </button>
                             </h2>
                             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    A: To apply for a transfer, please fill out our online transfer application form and provide the necessary documentation. Our admissions team will review your application and get back to you with further instructions.
+                                    A:  Absolutely! Once you create your favourites list, you can share the link with friends or on social media
                                 </div>
                             </div>
                         </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingThree">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    Q: What are the benefits of attending community college for music?
+                                    Q: Who can I contact for customer support?
                                 </button>
                             </h2>
                             <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    A: Community colleges offer affordable music programs with personalized instruction, hands-on experience, and opportunities to collaborate with fellow musicians. It’s a great way to build a strong foundation before pursuing further education.
+                                    A: For customer support, please visit our "Contact Us" page where you'll find various options, including live chat, email support, and a help center.
                                 </div>
                             </div>
                         </div>

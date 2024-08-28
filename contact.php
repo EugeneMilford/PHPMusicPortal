@@ -9,12 +9,13 @@
         <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
         <link href="assets/css/home.css" rel="stylesheet">
         <link href="https://fonts.cdnfonts.com/css/apple-chancery" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
     </head>
     <body>
         <div id="canvas">
             <div id="box_wrapper">
-
-                <!-- Navbar Section-->
                 <header class="navbar navbar-expand-lg fixed-top">
                     <div class="container">
                         <a class="navbar-brand" href="index.php">Music Portal</a>
@@ -23,42 +24,15 @@
                         </button>
                         <div class="collapse navbar-collapse" id="navbarNav">
                             <ul class="navbar-nav ms-auto">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="index.php">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="albums.php">Music</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="albums.php">Albums</a></li>
-                                        <li><a class="dropdown-item" href="tracks.php">Tracks</a></li>
-                                        <li><a class="dropdown-item" href="playlists.php">Playlists</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="artists.php">Artists</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="videos.html">Music Videos</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="gallery.html">Gallery</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="blog.php">Blog</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="playlists.php">Playlists</a>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Extras</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="trending.php">Trending Music</a></li>
-                                        <li><a class="dropdown-item" href="top_10.php">Top 10 Albums Of All Time</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="contact.php">Contact Us</a>
-                                </li>
+                                <li class="nav-item"><a class="nav-link active" href="index.php">Home</a></li>
+                                <li class="nav-item"><a class="nav-link" href="faves.php">Favourites</a></li>
+                                <li class="nav-item"><a class="nav-link" href="artists.php">Artists</a></li>
+                                <li class="nav-item"><a class="nav-link" href="tracks.php">Tracks</a></li>
+                                <li class="nav-item"><a class="nav-link" href="albums.php">Albums</a></li>
+                                <li class="nav-item"><a class="nav-link" href="events.php">Events</a></li>
+                                <li class="nav-item"><a class="nav-link" href="blog.php">Blog</a></li>
+                                <li class="nav-item"><a class="nav-link" href="trending.php">Trending</a></li>
+                                <li class="nav-item"><a class="nav-link" href="contact.php">Contact Us</a></li>
                             </ul>
                         </div>
                     </div>

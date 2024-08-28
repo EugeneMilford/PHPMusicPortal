@@ -24,37 +24,19 @@
                         </button>
                         <div class="collapse navbar-collapse" id="navbarNav">
                             <ul class="navbar-nav ms-auto">
-                                <li class="nav-item">
-                                    <a class="nav-link active" href="index.php">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="faves.php">Favourites</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="artists.php">Artists</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="tracks.php">Tracks</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="albums.php">Albums</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="blog.php">Blog</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="playlists.php">Playlists</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="trending.php">Trending</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="contact.php">Contact Us</a>
-                                </li>
+                                <li class="nav-item"><a class="nav-link active" href="index.php">Home</a></li>
+                                <li class="nav-item"><a class="nav-link" href="faves.php">Favourites</a></li>
+                                <li class="nav-item"><a class="nav-link" href="artists.php">Artists</a></li>
+                                <li class="nav-item"><a class="nav-link" href="tracks.php">Tracks</a></li>
+                                <li class="nav-item"><a class="nav-link" href="albums.php">Albums</a></li>
+                                <li class="nav-item"><a class="nav-link" href="events.php">Events</a></li>
+                                <li class="nav-item"><a class="nav-link" href="blog.php">Blog</a></li>
+                                <li class="nav-item"><a class="nav-link" href="trending.php">Trending</a></li>
+                                <li class="nav-item"><a class="nav-link" href="contact.php">Contact Us</a></li>
                             </ul>
                         </div>
                     </div>
-                </header>   
+                </header> 
                 
                 <section class="page_breadcrumbs cs gradient section_padding_top_40 section_padding_bottom_25 table_section table_section_md" style="margin-top: 50px;">
                     <div class="container">

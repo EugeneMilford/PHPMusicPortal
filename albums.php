@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html>
     <head>
         <title>Albums</title>
@@ -24,38 +23,20 @@
                         </button>
                         <div class="collapse navbar-collapse" id="navbarNav">
                             <ul class="navbar-nav ms-auto">
-                                <li class="nav-item">
-                                    <a class="nav-link active" href="index.php">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="faves.php">Favourites</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="artists.php">Artists</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="tracks.php">Tracks</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="albums.php">Albums</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="blog.php">Blog</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="playlists.php">Playlists</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="trending.php">Trending</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="contact.php">Contact Us</a>
-                                </li>
+                                <li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
+                                <li class="nav-item"><a class="nav-link" href="faves.php">Favourites</a></li>
+                                <li class="nav-item"><a class="nav-link" href="artists.php">Artists</a></li>
+                                <li class="nav-item"><a class="nav-link active" href="albums.php">Albums</a></li>
+                                <li class="nav-item"><a class="nav-link" href="tracks.php">Tracks</a></li>
+                                <li class="nav-item"><a class="nav-link" href="events.php">Events</a></li>
+                                <li class="nav-item"><a class="nav-link" href="blog.php">Blog</a></li>
+                                <li class="nav-item"><a class="nav-link" href="trending.php">Trending</a></li>
+                                <li class="nav-item"><a class="nav-link" href="contact.php">Contact Us</a></li>
                             </ul>
                         </div>
                     </div>
-                </header>    
-                
+                </header>   
+
                 <section class="page_breadcrumbs cs gradient section_padding_top_40 section_padding_bottom_25 table_section table_section_md" style="margin-top: 50px;">
                     <div class="container">
                         <div class="row">
@@ -66,7 +47,7 @@
                                 <nav aria-label="breadcrumb">
                                     <ol class="breadcrumb">
                                         <li class="breadcrumb-item"><a href="./">Home</a></li>
-                                        <li class="breadcrumb-item"><a href="#">Albums</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page">Albums</li>
                                     </ol>
                                 </nav>
                             </div>
@@ -79,23 +60,23 @@
                         <div class="row">
                             <div class="col-6">
                                 <div class="col-sm-8 col-md-4 col-lg-4 order-sm-1 order-md-2 order-lg-2">
-                                <div class="widget widget_search">
-                                    <h3 class="widget-title">Search Artist for Album Data</h3>
-                                    <form method="post" class="searchform" action="">
-                                        <div class="form-group">
-                                            <label for="artist_name">Enter Artist Name:</label>
-                                            <input type="text" id="artist_name" name="artist_name" required>
-                                        </div>
-                                        <br>
-                                        <button type="submit" class="button_1">Search</button>
-                                    </form>
+                                    <div class="widget widget_search">
+                                        <h3 class="widget-title">Search Artist for Album Data</h3>
+                                        <form method="post" class="searchform" action="">
+                                            <div class="form-group">
+                                                <label for="artist_name">Enter Artist Name:</label>
+                                                <input type="text" id="artist_name" name="artist_name" required>
+                                            </div>
+                                            <br>
+                                            <button type="submit" class="button_1">Search</button>
+                                        </form>
+                                    </div>
                                 </div>
-                            </div>
                             </div>  
                         </div>
                     </div>
                 </section>
-                
+
                 <br>
                 <div class="row">
                     <section id="albums" class="ls section_padding_top_100 section_padding_bottom_100 columns_margin_bottom_30">
@@ -115,64 +96,64 @@
                 </div>
                 
                 <!-- Album Features Start -->
-                <div class="container-fluid feature pb-5">
-                    <div class="container pb-5">
-                        <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
-                            <h4 class="text-primary">Explore Our Features</h4>
-                            <h1 class="display-5 mb-4">Bringing together music, artistry, and communities for a shared experience.</h1>
-                            <p class="mb-0">
-                                Discover a world of music where creativity flourishes and connections thrive. Our platform empowers artists and listeners alike, fostering a vibrant environment for all music enthusiasts.
-                            </p>
-                        </div>
-                        <div class="row g-4">
-                            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
-                                <div class="feature-item p-4">
-                                    <div class="feature-icon p-4 mb-4">
-                                        <i class="fas fa-music fa-4x text-primary"></i>
-                                    </div>
-                                    <h4>Curated Playlists</h4>
-                                    <p class="mb-4">
-                                        Dive into expertly curated playlists that match any mood or occasion, helping you discover new favorites and revisit beloved classics.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
-                                <div class="feature-item p-4">
-                                    <div class="feature-icon p-4 mb-4">
-                                        <i class="fas fa-user-friends fa-4x text-primary"></i>
-                                    </div>
-                                    <h4>Community Engagement</h4>
-                                    <p class="mb-4">
-                                        Join a vibrant community of music lovers and artists, where sharing passion and insights enhances the listening experience.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
-                                <div class="feature-item p-4">
-                                    <div class="feature-icon p-4 mb-4">
-                                        <i class="fas fa-star fa-4x text-primary"></i>
-                                    </div>
-                                    <h4>Exclusive Content</h4>
-                                    <p class="mb-4">
-                                        Get access to exclusive tracks, behind-the-scenes footage, and interviews that bring you closer to your favorite artists.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
-                                <div class="feature-item p-4">
-                                    <div class="feature-icon p-4 mb-4">
-                                        <i class="fas fa-headphones-alt fa-4x text-primary"></i>
-                                    </div>
-                                    <h4>Seamless Streaming</h4>
-                                    <p class="mb-4">
-                                        Enjoy high-quality music streaming with an intuitive interface, making it easy to find and enjoy your favorite tunes anytime, anywhere.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+<div class="container-fluid album-feature pb-5">
+    <div class="container pb-5">
+        <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+            <h4 class="text-primary">Discover Your Next Favorite Album</h4>
+            <h1 class="display-5 mb-4">Search, Explore, and Save Your Favorite Albums.</h1>
+            <p class="mb-0">
+                Our platform offers an effortless search experience for music lovers. Whether you’re on the hunt for new albums or you want to dive deeper into the collection of an established artist, you're in the right place.
+            </p>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
+                <div class="album-feature-item p-4">
+                    <div class="feature-icon p-4 mb-4">
+                        <i class="fas fa-search fa-4x text-primary"></i>
                     </div>
+                    <h4>Album Search</h4>
+                    <p class="mb-4">
+                        Use our robust search functionality to uncover a wide array of albums across all genres. Find new favorites and revisit timeless classics.
+                    </p>
                 </div>
-                        
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
+                <div class="album-feature-item p-4">
+                    <div class="feature-icon p-4 mb-4">
+                        <i class="fas fa-info-circle fa-4x text-primary"></i>
+                    </div>
+                    <h4>In-Depth Album Profiles</h4>
+                    <p class="mb-4">
+                        Access detailed album profiles featuring track listings, production credits, artwork, and the stories behind your favorite records.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
+                <div class="album-feature-item p-4">
+                    <div class="feature-icon p-4 mb-4">
+                        <i class="fas fa-play fa-4x text-primary"></i>
+                    </div>
+                    <h4>Listen Instantly</h4>
+                    <p class="mb-4">
+                        Stream albums directly from our platform. Enjoy singles, collections, and curated playlists all in one accessible spot.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
+                <div class="album-feature-item p-4">
+                    <div class="feature-icon p-4 mb-4">
+                        <i class="fas fa-heart fa-4x text-primary"></i>
+                    </div>
+                    <h4>Save to Favorites</h4>
+                    <p class="mb-4">
+                        Easily save your favorite albums and create a personal library. Stay updated with notifications about new releases and special events related to your saved albums.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
                 <!-- Footer -->
                 <footer class="bg-dark text-white pt-4 pb-2 mt-5">
                     <div class="container">
@@ -206,5 +187,13 @@
                 </footer>
             </div>
         </div>
+        <script>
+            function addToFavorites(album) {
+                var favorites = JSON.parse(localStorage.getItem('favoriteAlbums')) || [];
+                favorites.push(album);
+                localStorage.setItem('favoriteAlbums', JSON.stringify(favorites));
+                alert('Album added to favorites');
+            }
+        </script>
     </body>
 </html>

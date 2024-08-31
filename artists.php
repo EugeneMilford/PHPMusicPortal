@@ -177,18 +177,18 @@
         </div>
         <script>
     function addToFavorites() {
-        var artistName = "<?php echo $search['artists'][0]['strArtist']; ?>";
-        var artistImg = "<?php echo $search['artists'][0]['strArtistThumb']; ?>";
-        var artistGenre = "<?php echo $search['artists'][0]['strGenre']; ?>";
-        var artistYear = "<?php echo $search['artists'][0]['intBornYear']; ?>";
+    // Ensure you are grabbing correct values
+    var artistName = "<?php echo $search['artists'][0]['strArtist']; ?>";
+    var artistImg = "<?php echo $search['artists'][0]['strArtistThumb']; ?>";
+    var artistGenre = "<?php echo $search['artists'][0]['strGenre']; ?>";
+    var artistYear = "<?php echo $search['artists'][0]['intBornYear']; ?>";
 
-        var favorites = JSON.parse(localStorage.getItem('favorites')) || [];
-        favorites.push({ name: artistName, img: artistImg, genre: artistGenre, year: artistYear });
-        localStorage.setItem('favorites', JSON.stringify(favorites));
+    var favorites = JSON.parse(localStorage.getItem('favoriteArtists')) || [];
+    favorites.push({ name: artistName, img: artistImg, genre: artistGenre, year: artistYear });
+    localStorage.setItem('favoriteArtists', JSON.stringify(favorites));
 
-        alert('Artist added to favorites');
-        console.log("Favorites: ", JSON.stringify(favorites)); // Debugging line
-    }
+    alert('Artist added to favorites');
+}
 </script>
     </body>
 </html>

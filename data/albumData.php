@@ -30,14 +30,13 @@ if (isset($_POST['artist_name'])) {
     } else {
         $search = json_decode($response, true);
         
-        // Print the search results
         echo "<div class='row topmargin_30'>";
 
         for ($i = 0; $i < 6; $i++) {
-            if (isset($search['album'][$i])) { // Check if album data exists
+            if (isset($search['album'][$i])) {
                 $img = $search['album'][$i]['strAlbumThumb'];
                 $imageData = base64_encode(file_get_contents($img));
-
+                
                 echo "<div class='col-md-4 col-sm-6'>";
                 echo "<div class='vertical-item slide-media text-center loop-color'>";
                 echo "<div class='item-media-wrap'>"; 
@@ -55,18 +54,16 @@ if (isset($_POST['artist_name'])) {
                 echo "<p class='card-text'><strong>Year Released:</strong> ".$search['album'][$i]['intYearReleased']."</p>";
                 echo "<p class='card-text'><strong>Style:</strong> ".$search['album'][$i]['strStyle']."</p>";
                 
-                // Button container with flex display
                 echo "<div class='button-container' style='display: flex; justify-content: space-between;'>";
                 echo "<button type='button' class='button_5' data-bs-toggle='modal' data-bs-target='#albumDetailModal$i'>View Details</button>";
-                echo "<button type='button' onclick='addToFavorites()' class='button_2'>Save to Favorites</button>";
-                echo "</div>"; // Closing button-container div
+                echo "<button type='button' class='button_2' onclick='addToFavorites({ name: \"".$search['album'][$i]['strAlbum']."\", img: \"".$search['album'][$i]['strAlbumThumb']."\", yearReleased: \"".$search['album'][$i]['intYearReleased']."\", style: \"".$search['album'][$i]['strStyle']."\" })'>Save to Favorites</button>";
+                echo "</div>";
 
                 echo "</div>";
                 echo "</div>";
                 echo "</div>";
                 echo "<br/>";
                 
-                // Modal for each album
                 echo "<div class='modal fade' id='albumDetailModal$i' tabindex='-1' aria-labelledby='albumDetailLabel$i' aria-hidden='true'>";
                 echo "<div class='modal-dialog modal-dialog-centered modal-dialog-scrollable'>";
                 echo "<div class='modal-content'>";
@@ -78,18 +75,17 @@ if (isset($_POST['artist_name'])) {
                 echo "<p><strong>Artist:</strong> ".$search['album'][$i]['strArtist']."</p>";
                 echo "<p><strong>Year Released:</strong> ".$search['album'][$i]['intYearReleased']."</p>";
                 echo "<p><strong>Style:</strong> ".$search['album'][$i]['strStyle']."</p>";
-                echo "<p><strong>Description:</strong> ".$search['album'][$i]['strDescriptionEN']."</p>";  // Assuming there's a description
+                echo "<p><strong>Description:</strong> ".$search['album'][$i]['strDescriptionEN']."</p>";
                 echo "</div>";
                 echo "<div class='modal-footer'>";
                 echo "<button type='button' class='button_3' data-bs-dismiss='modal'>Close</button>";
-                echo "<button type='button' onclick='addToFavorites()' class='button_4'>Save to Favorites</button>";
+                echo "<button type='button' class='button_4' onclick='addToFavorites({ name: \"".$search['album'][$i]['strAlbum']."\", img: \"".$search['album'][$i]['strAlbumThumb']."\", yearReleased: \"".$search['album'][$i]['intYearReleased']."\", style: \"".$search['album'][$i]['strStyle']."\" })'>Save to Favorites</button>";
                 echo "</div>";
                 echo "</div>";
                 echo "</div>";
                 echo "</div>";
             }
         }
-
-        echo "</div>"; // Closing row
+        echo "</div>";
     }
 }

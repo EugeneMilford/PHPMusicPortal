@@ -242,130 +242,18 @@
                 </div>
 
                 <!-- Artists Section -->
-                <section class="ls section_padding_top_50 section_padding_bottom_100 columns_padding_25">
+                <section class="ls section_padding_top_15 section_padding_bottom_15 columns_padding_25">
                     <div class="container">
                         <div class="row">
                             <div class="col-sm-12 text-center">
                                 <h2 class="section_header">Featured Artists</h2>
                                 <hr class="header_divider">
-                                <p class="small-text big">Check out our newest music albums. You can easily purchase our music albums on <span class="highlight3">iTunes</span> or <span class="highlight3">Google Play</span>.</p>
+                                <p class="small-text big">Check out the latest trending artists. You can easily purchase our music albums on <span class="highlight3">iTunes</span> or <span class="highlight3">Google Play</span>.</p>
                             </div>
                         </div>
                         <br>
                         <div class="row">
                             <?php include 'data/indexData.php' ?>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Albums Section -->
-                <section id="albums" class="ls section_padding_top_100 section_padding_bottom_100 columns_margin_bottom_30">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-sm-12 text-center">
-                                <h2 class="section_header">Featured Music Albums</h2>
-                                <hr class="header_divider">
-                                <p class="small-text big">Check out our newest music albums. You can easily purchase our music albums on <span class="highlight3">iTunes</span> or <span class="highlight3">Google Play</span>.</p>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="row topmargin_30">
-                            <div class="col-md-4 col-sm-6">
-                                <div class="vertical-item slide-media text-center loop-color">
-                                <div class="item-media-wrap"> 
-                                    <img src="assets/img/album1.jpg" alt="">
-                                    <div class="item-media back-media"> 
-                                        <img src="assets/img/cd.png" alt=""> 
-                                    </div>
-                                    <div class="item-media"> 
-                                        <img class="album-image" src="assets/img/album1.jpg" alt="">   
-                                    </div>
-                                </div>
-                                <br>
-                                    <div class="item-content topmargin_30">
-                                        <h4 class="entry-title bottommargin_0"> 
-                                            <a href="single-album.html">World's apart (2016)</a> 
-                                        </h4> 
-                                        <span class="price">$99,85</span> 
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-sm-6">
-                                <div class="vertical-item slide-media text-center loop-color">
-                                    <div class="item-media-wrap"> 
-                                        <img src="assets/img/album2.jpeg" alt="">
-                                        <div class="item-media back-media"> 
-                                            <img src="assets/img/cd.png" alt=""> 
-                                        </div>
-                                        <div class="item-media"> 
-                                            <img class="album-image" src="assets/img/album2.jpeg" alt="">   
-                                        </div>
-                                    </div>
-                                    <div class="item-content topmargin_30">
-                                        <h4 class="entry-title bottommargin_0"> 
-                                            <a href="single-album.html">Take My Soul (2017)</a> 
-                                        </h4> 
-                                        <span class="price">$109,95</span> 
-                                    </div>
-                                </div>
-                            </div>
-                        <div class="col-md-4 col-sm-6">
-                            <div class="vertical-item slide-media text-center loop-color">
-                                <div class="item-media-wrap"> 
-                                    <img src="assets/img/album3.jpeg" alt="">
-                                    <div class="item-media back-media"> 
-                                        <img src="assets/img/cd.png" alt=""> 
-                                    </div>
-                                    <div class="item-media"> 
-                                        <img class="album-image" src="assets/img/album3.jpeg" alt="">   
-                                    </div>
-                                </div>
-                                <div class="item-content topmargin_30">
-                                    <h4 class="entry-title bottommargin_0"> 
-                                        <a href="single-album.html">Folk Stories (2018)</a> 
-                                    </h4> 
-                                    <span class="price">$89,85</span> 
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6">
-                            <div class="vertical-item slide-media text-center loop-color">
-                                <div class="item-media-wrap"> 
-                                    <img src="assets/img/album4.jpeg" alt="">
-                                    <div class="item-media back-media"> 
-                                        <img src="assets/img/cd.png" alt=""> 
-                                    </div>
-                                    <div class="item-media"> 
-                                        <img class="album-image" src="assets/img/album4.jpeg" alt="">   
-                                    </div>
-                                </div>
-                                <div class="item-content topmargin_30">
-                                    <h4 class="entry-title bottommargin_0"> 
-                                        <a href="single-album.html">Feel the Beat (2019)</a> 
-                                    </h4> 
-                                    <span class="price">$119,90</span> 
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6">
-                            <div class="vertical-item slide-media text-center loop-color">
-                                <div class="item-media-wrap"> 
-                                    <img src="assets/img/album5.jpeg" alt="">
-                                    <div class="item-media back-media"> 
-                                        <img src="assets/img/cd.png" alt=""> 
-                                    </div>
-                                    <div class="item-media"> 
-                                        <img class="album-image" src="assets/img/album5.jpeg" alt="">   
-                                    </div>
-                                </div>
-                                <div class="item-content topmargin_30">
-                                    <h4 class="entry-title bottommargin_0"> 
-                                        <a href="single-album.html">Heart of Gold (2020)</a> 
-                                    </h4> 
-                                    <span class="price">$129,90</span> 
-                                </div>
-                            </div>
-                        </div>
                         </div>
                     </div>
                 </section>

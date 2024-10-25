@@ -1,5 +1,10 @@
 <!DOCTYPE html>
 
+<?php
+session_start();
+?>
+
+
 <html>
     <head>
         <meta charset="UTF-8">
@@ -20,7 +25,8 @@
                         <div class="btns">
                             <a href="login.php" class="btn-menu animated fadeInUp scrollto">Login</a>
                             <a href="register.php" class="btn-menu animated fadeInUp scrollto">Register</a>
-                            <a href="#" class="btn-menu animated fadeInUp scrollto">Free Demo</a>
+                            <a href="#" class="btn-menu animated fadeInUp scrollto">Demo User</a>
+                            <a href="#" class="btn-menu animated fadeInUp scrollto">Demo Admin</a>
                         </div>
                     </div>
                 </div>

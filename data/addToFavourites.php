@@ -1,25 +1,37 @@
 <?php
-session_start(); // Start session if not already started
+session_start();
+
+if (!isset($_SESSION['user_id'])) {
+    echo "Error: You need to log in to save favorites.";
+    exit;
+}
 
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['artistData'])) {
     $artistData = json_decode($_POST['artistData'], true);
+    $userId = $_SESSION['user_id'];
+    $artistId = $artistData['id'];
+    $artistName = $artistData['name'];
+    $artistGenre = $artistData['genre'];
+    $artistImage = $artistData['image'];
 
-    // Example of saving to session (you may want to save to database instead)
-    $_SESSION['favorite_artists'][] = $artistData;
+    // Database connection
+    $conn = new mysqli("host", "username", "password", "database");
 
-    echo "Artist added to favorites!";
-} else {
-    echo "Error: No artist data received.";
-}
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
 
-if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['albumData'])) {
-    $albumData = json_decode($_POST['albumData'], true);
+    // Add favorite artist for the logged-in user
+    $stmt = $conn->prepare("INSERT INTO favorite_artists (user_id, artist_id, artist_name, artist_genre, artist_image) VALUES (?, ?, ?, ?, ?)");
+    $stmt->bind_param("issss", $userId, $artistId, $artistName, $artistGenre, $artistImage);
 
-    // Example of saving to session (you may want to save to database instead)
-    $_SESSION['favorite_albums'][] = $albumData;
+    if ($stmt->execute()) {
+        echo "Artist added to favorites!";
+    } else {
+        echo "Error: Could not add artist to favorites.";
+    }
 
-    echo "Album added to favorites!";
-} else {
-    echo "Error: No album data received.";
+    $stmt->close();
+    $conn->close();
 }
 

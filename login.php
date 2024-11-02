@@ -14,6 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($user && password_verify($password, $user['password'])) {
         $_SESSION['user_id'] = $user['id'];
+        $_SESSION['username'] = $user['username']; // Store the username in session
         $_SESSION['role'] = $user['role'];
         header("Location: home.php");
     } else {
@@ -71,8 +72,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             </div>
 
                             <div>
-                            <button type="submit" class="button_2 w-50 py-3">Login</button>
-                            <button class="button_5 w-50 py-3">Reset</button>
+                            <button type="submit" class="button_2 w-40 py-3">Login</button>
+                            <button class="button_5 w-40 py-3">Reset</button>
                             <!-- <input type="submit" value="Login" class="button_2" id="submit" name="submit" />
                             <input type="reset" value="Reset" class="submit" id="reset" name="reset" /> -->
                         </div>

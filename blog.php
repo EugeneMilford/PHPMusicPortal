@@ -4,21 +4,41 @@ session_start(); // Start the session to access session variables
 require 'config/db.php'; // Include database connection file
 
 // Check if the user is logged in
-if (!isset($_SESSION['user_id'])) {
-    header("Location: login.php");
-    exit;
+$userId = isset($_SESSION['user_id']) ? $_SESSION['user_id'] : null;
+
+// Check if the form is submitted
+if ($_SERVER['REQUEST_METHOD'] == 'GET' && isset($_GET['email'])) {
+    $email = $_GET['email']; // Collect email input
+    $email = filter_var($email, FILTER_SANITIZE_EMAIL); // Sanitize input
+
+    // Validate email
+    if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        if ($userId) {
+            // Prepare SQL statement to check if the user is already subscribed
+            $checkStmt = $pdo->prepare("SELECT * FROM newsletter WHERE user_id = :user_id");
+            $checkStmt->execute(['user_id' => $userId]);
+            $existingSubscription = $checkStmt->fetch(PDO::FETCH_ASSOC);
+
+            if ($existingSubscription) {
+                echo "<script>alert('You are already subscribed with this email.');</script>";
+            } else {
+                // Prepare SQL statement to insert into newsletter
+                $stmt = $pdo->prepare("INSERT INTO newsletter (user_id, email) VALUES (:user_id, :email)");
+                
+                // Execute SQL statement with the user ID and email
+                if ($stmt->execute(['user_id' => $userId, 'email' => $email])) {
+                    echo "<script>alert('Successfully subscribed!');</script>";
+                } else {
+                    echo "<script>alert('Error: Unable to subscribe. Please try again.');</script>";
+                }
+            }
+        } else {
+            echo "<script>alert('You need to be logged in to subscribe.');</script>";
+        }
+    } else {
+        echo "<script>alert('Invalid email format.');</script>";
+    }
 }
-
-// Get the logged-in user's username/email
-$userId = $_SESSION['user_id'];
-$stmt = $pdo->prepare("SELECT username FROM users WHERE id = ?");
-$stmt->execute([$userId]);
-$user = $stmt->fetch(PDO::FETCH_ASSOC);
-
-// Execute the query and fetch results
-$stmt->execute();
-$todos = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
 ?>
 
 <!DOCTYPE html>
@@ -364,18 +384,19 @@ $todos = $stmt->fetchAll(PDO::FETCH_ASSOC);
                                     </div>
                                 </div>
                             </div>
+                            <!-- Your HTML content goes here -->
                             <aside class="col-sm-5 col-md-4 col-lg-4">
                                 <div class="widget widget_apsc_widget">
                                     <h3 class="widget-title">Get In Touch</h3>
                                 </div>
                                 <div class="widget widget_mailchimp">
                                     <h3 class="widget-title">Newsletter</h3>
-                                    <form class="signup" action="./" method="get">
+                                    <form class="signup" action="./blog.php" method="get"> <!-- Change action to blog.php -->
                                         <div class="input-group mb-3">
-                                            <input name="email" type="email" id="mailchimp-aside" class="mailchimp_email form-control" placeholder="E-mail Address">
+                                            <input name="email" type="email" id="mailchimp-aside" class="mailchimp_email form-control" placeholder="E-mail Address" required>
                                             <button type="submit" class="button_1">Subscribe</button>
                                         </div>
-                                        <p>Enter Email here to be updated. We promise not to send you spam!</p>
+                                        <p>Enter email here to be updated. We promise not to send you spam!</p>
                                     </form>
                                 </div>
                             </aside>

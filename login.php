@@ -60,7 +60,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         <div class="row g-3">
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control border-0" id="username" name="username" placeholder="Name">
+                                    <input type="text" class="form-control border-0" id="username" name="username" placeholder="Username">
                                     <label for="username">User Name</label>
                                 </div>
                             </div>

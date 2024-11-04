@@ -1,24 +1,44 @@
 <?php
-session_start(); // Start the session to access session variables
+session_start(); // Start session to access user ID if needed
 
 require 'config/db.php'; // Include database connection file
 
 // Check if the user is logged in
-if (!isset($_SESSION['user_id'])) {
-    header("Location: login.php");
-    exit;
+$userId = isset($_SESSION['user_id']) ? $_SESSION['user_id'] : null;
+
+// Check if the form is submitted
+if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['contact_submit'])) {
+    $name = filter_var($_POST['name'], FILTER_SANITIZE_STRING);
+    $phone_number = filter_var($_POST['phone'], FILTER_SANITIZE_STRING);
+    $email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
+    $subject = filter_var($_POST['subject'], FILTER_SANITIZE_STRING);
+    $message = filter_var($_POST['message'], FILTER_SANITIZE_STRING);
+    $submitted_at = date("Y-m-d H:i:s");
+
+    // Validate email
+    if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        // Prepare SQL statement to insert into contact
+        $stmt = $pdo->prepare("INSERT INTO contact (user_id, name, phone_number, email, subject, message, submitted_at) 
+                               VALUES (:user_id, :name, :phone_number, :email, :subject, :message, :submitted_at)");
+
+        // Execute SQL statement with parameters
+        if ($stmt->execute([
+            'user_id' => $userId,
+            'name' => $name,
+            'phone_number' => $phone_number,
+            'email' => $email,
+            'subject' => $subject,
+            'message' => $message,
+            'submitted_at' => $submitted_at
+        ])) {
+            echo "<script>alert('Message Sent!');</script>";
+        } else {
+            echo "<script>alert('Error: Unable to send message. Please try again.');</script>";
+        }
+    } else {
+        echo "<script>alert('Invalid email format.');</script>";
+    }
 }
-
-// Get the logged-in user's username/email
-$userId = $_SESSION['user_id'];
-$stmt = $pdo->prepare("SELECT username FROM users WHERE id = ?");
-$stmt->execute([$userId]);
-$user = $stmt->fetch(PDO::FETCH_ASSOC);
-
-// Execute the query and fetch results
-$stmt->execute();
-$todos = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
 ?>
 
 <!DOCTYPE html>
@@ -103,7 +123,7 @@ $todos = $stmt->fetchAll(PDO::FETCH_ASSOC);
                         </div>
                         <div class="row">
                             <div class="col-md-8">
-                                <form class="contact-form columns_padding_5 bottommargin_40" method="post" action="./">
+                                <form class="contact-form columns_padding_5 bottommargin_40" method="post" action="./contact.php">
                                     <div class="row g-3">
                                         <div class="col-sm-6">
                                             <div class="form-group mb-0">

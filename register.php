@@ -57,7 +57,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 </div>
             </div>
             <div class="col-lg-7 wow fadeInRight" data-wow-delay="0.4s">
-                <div>
+                <div class="container">
                     <h4 class="text-primary">Register Your Account</h4>
                     <p class="mb-4">Fill in the details below to create your account.</p>
                     <form method="POST" id="register-form">

@@ -39,39 +39,46 @@ $todos = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <div id="canvas">
         <div id="box_wrapper">
             <header class="navbar navbar-expand-lg fixed-top">
-                <div class="container">
-                    <a class="navbar-brand" href="home.php">Music Portal</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav ms-auto">
-                            <li class="nav-item"><a class="nav-link active" href="home.php">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="faves.php">Favourites</a></li>
-                            <li class="nav-item"><a class="nav-link" href="artists.php">Artists</a></li>
-                            <li class="nav-item"><a class="nav-link" href="tracks.php">Tracks</a></li>
-                            <li class="nav-item"><a class="nav-link" href="albums.php">Albums</a></li>
-                            <li class="nav-item"><a class="nav-link" href="events.php">Events</a></li>
-                            <li class="nav-item"><a class="nav-link" href="blog.php">Blog</a></li>
-                            <li class="nav-item"><a class="nav-link" href="trending.php">Trending</a></li>
-                            <li class="nav-item"><a class="nav-link" href="contact.php">Contact Us</a></li>
-                        </ul>
-                        <ul class="navbar-nav ms-auto"> <!-- New ul for user greeting -->
-                            <?php if (isset($_SESSION['username'])): ?>
-                                <li class="nav-item">
-                                    <a class="nav-link">Hello, <?php echo htmlspecialchars($_SESSION['username']); ?>!</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="logout.php">Logout</a>
-                                </li>
-                            <?php else: ?>
-                                <li class="nav-item"><a class="nav-link" href="login.php">Login</a></li>
-                                <li class="nav-item"><a class="nav-link" href="register.php">Register</a></li>
-                            <?php endif; ?>
-                        </ul>
-                    </div>
-                </div>
-            </header>
+    <div class="container">
+        <a class="navbar-brand" href="home.php">Music Portal</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link active" href="home.php">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="faves.php">Favourites</a></li>
+                <li class="nav-item"><a class="nav-link" href="artists.php">Artists</a></li>
+                <li class="nav-item"><a class="nav-link" href="tracks.php">Tracks</a></li>
+                <li class="nav-item"><a class="nav-link" href="albums.php">Albums</a></li>
+                <li class="nav-item"><a class="nav-link" href="events.php">Events</a></li>
+                <li class="nav-item"><a class="nav-link" href="blog.php">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="trending.php">Trending</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.php">Contact Us</a></li>
+            </ul>
+            <ul class="navbar-nav ms-auto"> <!-- New ul for user greeting -->
+                <?php if (isset($_SESSION['username'])): ?>
+                    <li class="nav-item">
+                        <a class="nav-link">Hello, <?php echo htmlspecialchars($_SESSION['username']); ?>!</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="logout.php">Logout</a>
+                    </li>
+                <?php elseif (isset($_SESSION['role']) && $_SESSION['role'] === 'user'): ?>
+                    <li class="nav-item">
+                        <a class="nav-link">Hello Demo User!</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="logout.php">Logout</a></li>
+                <?php elseif (isset($_SESSION['role']) && $_SESSION['role'] === 'admin'): ?>
+                    <li class="nav-item">
+                        <a class="nav-link">Hello Demo Admin!</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="logout.php">Logout</a></li>
+                <?php endif; ?>
+            </ul>
+        </div>
+    </div>
+</header>
 
             <section class="page_breadcrumbs cs gradient section_padding_top_40 section_padding_bottom_25 table_section table_section_md" style="margin-top: 50px;">
                 <div class="container">

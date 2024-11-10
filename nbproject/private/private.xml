@@ -3,16 +3,14 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/wamp64/www/Music%20Portal/albums.php</file>
+            <file>file:/C:/wamp64/www/Music%20Portal/register.php</file>
             <file>file:/C:/wamp64/www/Music%20Portal/demo.php</file>
-            <file>file:/C:/wamp64/www/Music%20Portal/contact.php</file>
-            <file>file:/C:/wamp64/www/Music%20Portal/faves.php</file>
             <file>file:/C:/wamp64/www/Music%20Portal/blog.php</file>
-            <file>file:/C:/wamp64/www/Music%20Portal/artists.php</file>
+            <file>file:/C:/wamp64/www/Music%20Portal/contact.php</file>
             <file>file:/C:/wamp64/www/Music%20Portal/home.php</file>
-            <file>file:/C:/wamp64/www/Music%20Portal/trending.php</file>
             <file>file:/C:/wamp64/www/Music%20Portal/index.php</file>
             <file>file:/C:/wamp64/www/Music%20Portal/login.php</file>
+            <file>file:/C:/wamp64/www/Music%20Portal/config/db.php</file>
         </group>
     </open-files>
 </project-private>

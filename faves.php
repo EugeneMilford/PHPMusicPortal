@@ -105,7 +105,7 @@ $todos = $stmt->fetchAll(PDO::FETCH_ASSOC);
                             <h2 class="section_header">Favorite Artists</h2>
                             <hr class="header_divider">
                             <p class="small-text big">Your favorite artists are listed below.</p>
-                            <button class="btn btn-warning mb-4" onclick="clearFavorites('artists')">Clear All Favorite Artists</button>
+                            <button class="button_5" onclick="clearFavorites('artists')">Clear All Favorite Artists</button>
                         </div>
                     </div>
                     <div class="row" id="faves"></div>
@@ -115,7 +115,7 @@ $todos = $stmt->fetchAll(PDO::FETCH_ASSOC);
                             <h2 class="section_header">Favorite Albums</h2>
                             <hr class="header_divider">
                             <p class="small-text big">Your favorite albums are listed below.</p>
-                            <button class="btn btn-warning mb-4" onclick="clearFavorites('albums')">Clear All Favorite Albums</button>
+                            <button class="button_5" onclick="clearFavorites('albums')">Clear All Favorite Albums</button>
                         </div>
                     </div>
                     <div class="row" id="favouriteAlbums">
@@ -127,7 +127,7 @@ $todos = $stmt->fetchAll(PDO::FETCH_ASSOC);
                             <h2 class="section_header">Favorite Tracks</h2>
                             <hr class="header_divider">
                             <p class="small-text big">Your favorite tracks are listed below.</p>
-                            <button class="btn btn-warning mb-4" onclick="clearFavorites('tracks')">Clear All Favorite Tracks</button>
+                            <button class="button_5" onclick="clearFavorites('tracks')">Clear All Favorite Tracks</button>
                         </div>
                     </div>
                     <div class="row" id="favouriteTracks">

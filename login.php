@@ -55,28 +55,31 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="col-lg-7 wow fadeInRight" data-wow-delay="0.4s">
                 <div>
                     <h4 class="text-primary">Login To Your Account</h4>
-                    <p class="mb-4">Fill in the details below to login your account.</p>
+                    <p class="mb-4">Fill in the details below to login to your account.</p>
                     <form method="POST">
-                        <div class="row g-3">
-                            <div class="col-md-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control border-0" id="username" name="username" placeholder="Username">
-                                    <label for="username">User Name</label>
+                        <div class="row g-3">    
+                            <div class="col-sm-6">
+                                <div class="form-group mb-0">
+                                    <label for="name" class="form-label">User Name <span class="required">*</span></label>
+                                    <i class="fa fa-user highlight2" aria-hidden="true"></i>
+                                    <input type="text" aria-required="true" size="30" value="" name="username" id="username" class="form-control" placeholder="User Name">
                                 </div>
                             </div>
-                            <div class="col-md-6">
-                                <div class="form-floating">
-                                    <input type="password" class="form-control border-0" name="password" id="password" placeholder="Password">
-                                    <label for="password">Password</label>
+                            
+                            <div class="col-sm-6">
+                                <div class="form-group mb-0">
+                                    <label for="name" class="form-label">Password<span class="required">*</span></label>
+                                    <i class="fa fa-user highlight2" aria-hidden="true"></i>
+                                    <input type="password" aria-required="true" size="30" value="" name="password" id="password" class="form-control" placeholder="Password">
                                 </div>
                             </div>
 
                             <div>
-                            <button type="submit" class="button_2 w-40 py-3">Login</button>
-                            <button class="button_5 w-40 py-3">Reset</button>
+                                <button type="submit" class="button_2 w-40 py-3">Login</button>
+                                <button class="button_5 w-40 py-3">Reset</button>
                             <!-- <input type="submit" value="Login" class="button_2" id="submit" name="submit" />
                             <input type="reset" value="Reset" class="submit" id="reset" name="reset" /> -->
-                        </div>
+                            </div>
                         <?php
                         // Display error message if login fails
                         if (isset($error_message)) {
